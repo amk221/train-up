@@ -66,7 +66,11 @@ class Upgrade_helper {
    * @access public
    */
   public function __construct() {
-    set_site_transient('update_plugins', '');
+    if (!tu()->config['general']['auto_update']) {
+      return;
+    }
+
+    // set_site_transient('update_plugins', '');
 
     add_filter('pre_set_site_transient_update_plugins', array($this, '_check'));
     add_filter('plugins_api', array($this, '_info'), 10, 3);
