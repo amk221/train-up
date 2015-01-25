@@ -35,7 +35,6 @@ The documentation is currently more of an overview of features. Help providing b
 * [Archive](docs/archive.md)
 * [Bulk emailer](docs/emailer.md)
 * [Theme](docs/theme.md)
-* [Settings](docs/settings.md)
 * [Tin Can API](docs/tin_can.md)
 * [Actions & Filters](docs/actions_and_filters.md)
 * [Tips](docs/tips.md)
