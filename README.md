@@ -26,6 +26,7 @@ The documentation is currently more of an overview of features. Help providing b
 * [Tips](docs/tips.md)
 
 ##### Add-ons
+These are simply WordPress themes or plugins that augment Train-Up!'s existing functionality.
 
 * [Simple theme](https://github.com/amk221/train-up.simple_theme)
 * [Orderable question type](https://github.com/amk221/train-up.orderable_questions)
