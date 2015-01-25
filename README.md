@@ -48,3 +48,7 @@ These are simply WordPress themes or plugins that augment Train-Up!'s existing f
 * [Fill-in the blanks questions](https://github.com/amk221/train-up.fill_in_the_blanks_questions)
 * [Essay style questions](https://github.com/amk221/train-up.essay_questions)
 * [File-attachment questions](https://github.com/amk221/train-up.file_attachment_questions)
+
+##### Developer quick-start
+To interact with Train-Up! simply access `tu()` in your code. At any one time you will have access to `tu()->post` (the active WordPress post but wrapped with extra training-functionality) and `tu()->user` (the logged in trainee). You can also access the current level, resource, test, question or result post by using the aliases like so: 
+`tu()->question->test->level->post_title`
