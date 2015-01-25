@@ -1,0 +1,7 @@
+Welcome to the [test_level_title] test. It is a multiple choice test consisting of [number_of_test_questions] questions.
+
+[!trainee_started_test]Once you start the test, access to the training resources will be restricted. When you are ready you may [start_test_link text="start the test"].[/!trainee_started_test]
+
+[trainee_started_test]If you have attempted as many questions as you can, and feel you are happy with your responses you may [finish_test_link text="submit your answers"]. [list_test_questions] [/trainee_started_test]
+
+[trainee_submitted_answers]Thank you for submitting your answers, results will be made available soon.[/trainee_submitted_answers][!trainee_submitted_answers][trainee_finished_test]You have already completed this test.[/trainee_finished_test][/!trainee_submitted_answers]

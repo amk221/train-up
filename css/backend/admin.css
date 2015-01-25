@@ -1,0 +1,157 @@
+input[disabled] {
+  opacity: .6;
+}
+
+.tu-table tr:first-child th a {
+  text-decoration: none
+}
+
+.tu-bullet-list li::before {
+  content: ' \2022 ';
+  margin-right: 4px;
+  font-size: 165%;
+  vertical-align: middle;
+  color: #ccc;
+}
+.tu-number-list {
+  list-style: decimal;
+  margin-left: 20px;
+}
+
+#message.tu-message {
+  margin-left: 0;
+}
+
+.tu-add {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.tu-remove {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.tu-plus {
+  color: #777;
+}
+
+.tu-you-are-here {
+  color: #999;
+}
+.tu-breadcrumb-trail {
+  margin: 15px 15px 15px 0;
+  padding: 8px 12px 8px 12px;
+  line-height: 1;
+  background: #fff;
+  display: inline-block;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0 ,0, 0, .1);
+  box-shadow: 0 1px 1px 0 rgba(0 ,0, 0, .1)
+}
+.tu-breadcrumb-trail ol {
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+}
+.tu-breadcrumb-trail li {
+  display: inline;
+  margin-right: 0;
+}
+.tu-breadcrumb-trail li:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  margin: 0 4px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid #ccc;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.tu-breadcrumb-trail a {
+  text-decoration: none
+}
+
+td.tu-index {
+  width: 5%;
+}
+
+.tu-level-number {
+  max-width: 75px;
+}
+
+fieldset {
+  max-width: 65%;
+  border: 1px solid #e9e9e9;
+  border-radius: 2px;
+  padding: 0 15px 15px 0;
+  margin: 0 0 15px 0;
+}
+legend {
+  margin-left: 10px;
+}
+
+.tu-destructive {
+  color: #f00;
+  border-bottom: 1px solid #f00;
+  text-decoration: none;
+  padding: 2px 1px;
+  display: inline-block;
+  line-height: 1;
+}
+.tu-destructive:hover {
+  background-color: #f00;
+  color: #fff;
+}
+
+
+span.description {
+  color: #999;
+  margin-left: 10px;
+}
+p.description {
+  color: #999;
+}
+
+.button-not-default {
+  float: left;
+}
+th#order {
+  width: 5em;
+}
+
+.form-validation {
+  color: #c00;
+  font-weight: bold;
+  display: block;
+}
+
+.add-new-h2.tu-h2-label {
+  visibility: visible
+}
+.tu-h2-label-remove {
+  margin-right: 2px
+}
+
+.tu-dialog {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+  padding: 20px;
+}
+.tu-dialog .ui-dialog-titlebar {
+  display: none;
+}
+.tu-dialog .ui-button:not(:last-child) {
+  margin-right: 10px;
+}
+.tu-dialog-title {
+  margin-top: 0;
+}
+.tu-dialog .ui-dialog-buttonset {
+  text-align: right;
+}
+.tu-dialog .tu-import-result .tu-message {
+  margin-bottom: 15px;
+}

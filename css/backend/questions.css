@@ -1,0 +1,63 @@
+.tu-answers th.tu-answer-correct {
+  width: 5%;
+}
+.tu-answers td.tu-answer-correct {
+  text-align: center;
+}
+.tu-answers tr.tu-answer td.tu-answer,
+.tu-answers td.tu-answer input {
+  width: 100%;
+}
+
+
+.tu-single-answer-config {
+  display: flex;
+}
+.tu-single-answer-config > *:not(:last-child) {
+  margin-right: 10px
+}
+.tu-single-answer-config > span {
+  flex: 3;
+  margin-top: .5em;
+  text-align: center
+}
+.tu-single-answer-config > select {
+  flex: 3;
+}
+.tu-single-answer-config > input[name=single_answer] {
+  flex: 7;
+}
+
+
+.tu-answer-checker {
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  box-shadow: 0 -1px 0 #dfdfdf;
+}
+.tu-answer-checker h4 {
+  margin-bottom: 0
+}
+.tu-answer-checker .correct {
+  color: #393;
+}
+.tu-answer-checker .incorrect {
+  color: #c00;
+}
+.tu-answer-checker-answer textarea {
+  width: 100%;
+  min-height: 70px;
+}
+.tu-answer-checker-result {
+  text-align: right
+}
+
+
+.tu-dev-filter-table td {
+  padding: 3px;
+}
+.tu-dev-filter-table caption {
+  text-align: left;
+  font-weight: bold;
+  padding: 8px;
+}
+

@@ -1,0 +1,2341 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Train-up! v1.1.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-10-15 19:44:28+0000\n"
+"Last-Translator: admin <steve@preventiedatabase.nl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: class/base/helper_ajax.php:98
+#@ trainup
+msgid "Invalid action"
+msgstr "Ongeldige bewerking"
+
+#: class/base/helper_roles.php:67
+#@ trainup
+msgid "Administrator"
+msgstr "Beheerder"
+
+#: class/base/helper_roles.php:68
+#@ trainup
+msgid "Full ability to administer the plugin"
+msgstr "Plugin beheren toegestaan"
+
+#: class/base/helper_roles.php:100
+#, php-format
+#@ trainup
+msgid "Have the ability to view results of %1$s within their %2$s"
+msgstr "De mogelijkheid om binnen hun %2$s de resultaten van hun %1$s te bekijken"
+
+#: class/base/helper_roles.php:153
+#, php-format
+#@ trainup
+msgid "Have the ability to view %1$s, %2$s, and take %3$s"
+msgstr "De mogelijkheid om %1$s te bekijken en %3$s te krijgen"
+
+#: class/base/helper_theme.php:240
+#@ trainup
+msgid "Leave a comment"
+msgstr "Laat een bericht achter"
+
+#: class/base/helper_theme.php:241
+#, php-format
+#@ trainup
+msgid "Reply to %s"
+msgstr "Antwoord %s"
+
+#: class/base/post_admin.php:95
+#: class/group_managers/user_admin.php:145
+#: class/trainees/user_admin.php:152
+#: view/backend/results/test_archive.php:127
+#: view/backend/results/user_archive.php:140
+#@ trainup
+msgid "View"
+msgstr "Bekijken"
+
+#: class/base/post_admin.php:127
+#: class/levels/post_admin.php:95
+#: class/pages/post_admin.php:60
+#: class/questions/post_admin.php:100
+#: class/results/post_admin.php:91
+#: class/tests/post_admin.php:72
+#@ trainup
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: class/base/post_admin.php:128
+#@ trainup
+msgid "Shortcodes allow you to insert dynamic content into the editor."
+msgstr "Shortcodes geven je de mogelijkheid om specifieke inhoud toe te voegen aan de bewerker."
+
+#: class/base/post_admin.php:272
+#: class/base/post_admin.php:290
+#@ trainup
+msgid "Order"
+msgstr "Lijst"
+
+#: class/base/user.php:330
+#, php-format
+#@ trainup
+msgid "%1$s already started"
+msgstr "%1$s is al van start"
+
+#: class/base/user.php:332
+#, php-format
+#@ trainup
+msgid "%1$s already finished"
+msgstr "%1$s is al afgerond"
+
+#: class/base/user.php:356
+#, php-format
+#@ trainup
+msgid "You cannot finish this %1$s, because you have not started it"
+msgstr "Je kunt deze %1$s niet afronden omdat je er nog niet aan bent begonnen"
+
+#: class/base/user.php:1320
+#: class/results/helpers.php:165
+#: class/results/post_admin.php:133
+#: class/results/post_admin.php:153
+#: view/backend/forms/grade_selector.php:22
+#: view/backend/results/results_meta.php:5
+#: view/backend/results/test_archive.php:52
+#: view/backend/results/user_archive.php:60
+#: view/frontend/results/table.php:37
+#@ trainup
+msgid "Percentage"
+msgstr "Percentage"
+
+#: class/base/user.php:1402
+#, php-format
+#@ trainup
+msgid "You must have passed \"%1$s\" before you can access \"%2$s\""
+msgstr "Je moet eerst \"%1$s\" afronden voordat je toegang krijgt tot \"%2$s\""
+
+#: class/base/user.php:1435
+#: class/base/user.php:1560
+#: class/base/user_admin.php:82
+#: class/group_managers/user.php:119
+#: class/group_managers/user.php:155
+#: class/pages/page_edit_my_details.php:119
+#: class/pages/page_forgotten_password.php:83
+#: class/pages/page_login.php:92
+#: class/pages/page_reset_password.php:95
+#@ trainup
+msgid "Access denied"
+msgstr "Toegang geweigerd"
+
+#: class/base/user.php:1437
+#, php-format
+#@ trainup
+msgid "You are not in the correct %1$s"
+msgstr "Je bent niet in de juiste %1$s"
+
+#: class/base/user.php:1467
+#@ trainup
+msgid "Sorry, you have run out of time"
+msgstr "Sorry, je tijd is verstreken"
+
+#: class/base/user.php:1498
+#, php-format
+#@ trainup
+msgid "Access to %1$s is denied whilst you are taking a %2$s"
+msgstr "Toegang tot %1$s is geweigerd zolang je bezig bent met een %2$s"
+
+#: class/base/user.php:1523
+#, php-format
+#@ trainup
+msgid "You have not started the %1$s yet"
+msgstr "Je bent nog niet begonnen aan het %1$s"
+
+#: class/base/user.php:1525
+#, php-format
+#@ trainup
+msgid "You have already completed the %1$s"
+msgstr "Je hebt de %1$s al afgerond"
+
+#: class/base/user.php:1587
+#@ trainup
+msgid "You have exceeded the amount of resit attempts"
+msgstr "Je hebt het maximaal aantal herkansingen bereikt"
+
+#: class/base/user_admin.php:247
+#@ trainup
+msgid "Add new"
+msgstr "Nieuwe toevoegen"
+
+#: class/base/user_admin.php:324
+#, php-format
+#@ trainup
+msgid "%1$s not in a %2$s"
+msgstr "%1$s niet in een %2$s"
+
+#: class/base/validation.php:20
+#@ trainup
+msgid "This field is required"
+msgstr "Dit veld is verplicht"
+
+#: class/base/validation.php:36
+#@ trainup
+msgid "Please choose an option"
+msgstr "Selecteer een optie"
+
+#: class/base/validation.php:44
+#@ trainup
+msgid "Please select an option"
+msgstr "Selecteer een optie"
+
+#: class/base/validation.php:52
+#@ trainup
+msgid "A valid e-mail address is required"
+msgstr "Een geldig emailadres vereist"
+
+#: class/base/validation.php:60
+#@ trainup
+msgid "That email address is already taken"
+msgstr "Dit emailadres is al in gebruik"
+
+#: class/base/validation.php:68
+#@ trainup
+msgid "Invalid email address"
+msgstr "Ongeldig emailadres"
+
+#: class/base/validation.php:76
+#@ trainup
+msgid "Your password must be more than 5 characters"
+msgstr "Je wachtwoord moet uit ten minste 6 karakters bestaan"
+
+#: class/base/validation.php:84
+#@ trainup
+msgid "Your passwords do not match"
+msgstr "Je wachtwoorden komen niet overeen"
+
+#: class/base/validation.php:92
+#@ trainup
+msgid "Your username must be more than 3 characters"
+msgstr "Je gebruikersnaam moet uit ten minste vier karakters bestaan"
+
+#: class/base/validation.php:100
+#@ trainup
+msgid "Sorry, that username is already taken"
+msgstr "Sorry, die gebruikersnaam is al door iemand anders gekozen"
+
+#: class/base/validation.php:114
+#@ trainup
+msgid "Your account is not activated"
+msgstr "Je account is niet geactiveerd"
+
+#: class/base/validation.php:125
+#@ trainup
+msgid "Invalid username or password"
+msgstr "Ongeldige gebruikersnaam of wachtwoord"
+
+#: class/base/validation.php:136
+#@ trainup
+msgid "Please enter a valid postcode"
+msgstr "Vul een geldige postcode in"
+
+#: class/base/validation.php:168
+#@ trainup
+msgid "Please select the day of the month"
+msgstr "Selecteer een dag"
+
+#: class/base/validation.php:176
+#@ trainup
+msgid "Please select the month"
+msgstr "Selecteer een maand"
+
+#: class/base/validation.php:184
+#@ trainup
+msgid "Please select the year"
+msgstr "Selecteer een jaar"
+
+#: class/base/validation.php:192
+#@ trainup
+msgid "Please enter a valid phone number"
+msgstr "Vul een geldig telefoonnummer in"
+
+#: class/debug/admin.php:55
+#: class/debug/admin.php:56
+#: class/debug/admin.php:106
+#: view/backend/page/debug.php:3
+#@ trainup
+msgid "Debug"
+msgstr "Debug"
+
+#: class/debug/fixtures.php:38
+#@ trainup
+msgid "Fixtures already installed"
+msgstr "Speciale bewerkingen zijn geïnstalleerd"
+
+#: class/debug/fixtures.php:137
+#: class/importer/helpers.php:117
+#: class/questions/post.php:508
+#: view/archived_answers.php:6
+#, php-format
+#@ trainup
+#@ default
+msgid "Question %1$s"
+msgstr "Vraag %1$s"
+
+#: class/debug/fixtures.php:140
+#, php-format
+#@ trainup
+msgid "What is %1$s + %2$s?"
+msgstr "Wat is %1$s + %2$s?"
+
+#: class/debug/fixtures.php:214
+#@ trainup
+msgid "No fixtures to remove"
+msgstr "Geen speciale bewerkingen om te verwijderen"
+
+#: class/emailer/admin.php:113
+#: class/emailer/admin.php:114
+#@ trainup
+msgid "Emailer"
+msgstr "Emailer"
+
+#: class/emailer/admin.php:173
+#: class/results/admin.php:286
+#@ trainup
+msgid "Send emails"
+msgstr "Emails verzenden"
+
+#: class/emailer/helpers.php:61
+#@ trainup
+msgid "Error sending email"
+msgstr "Email verzenden mislukt"
+
+#: class/emailer/helpers.php:65
+#, php-format
+#@ trainup
+msgid "%1$s email sent"
+msgid_plural "%1$s emails sent"
+msgstr[0] "%1$s email verstuurd"
+msgstr[1] "%1$s emails verstuurd"
+
+#: class/emailer/helpers.php:86
+#@ trainup
+msgid "Send email"
+msgstr "Email verzenden"
+
+#: class/emailer/helpers.php:87
+#: view/backend/emailer/index.php:73
+#@ trainup
+msgid "Send"
+msgstr "Verzenden"
+
+#: class/emailer/helpers.php:88
+#@ trainup
+msgid "Sending"
+msgstr "Verzenden"
+
+#: class/group_managers/user_admin.php:135
+#: class/trainees/user_admin.php:140
+#@ trainup
+msgid "None"
+msgstr "Geen"
+
+#: class/group_managers/user_admin.php:168
+#, php-format
+#@ trainup
+msgid "Select one or more %1$s which this %2$s can manage."
+msgstr "Selecteer een of meerdere %1$s die deze %2$s kunnen beheren."
+
+#: class/groups/post_admin.php:65
+#: class/groups/post_admin.php:81
+#: view/backend/forms/grade_selector.php:19
+#@ trainup
+msgid "Description"
+msgstr "Beschrijving"
+
+#: class/groups/post_admin.php:66
+#: class/tests/post.php:996
+#@ trainup
+msgid "Colour"
+msgstr "Kleur"
+
+#: class/groups/post_admin.php:91
+#: class/levels/post_admin.php:114
+#: class/resources/post_admin.php:59
+#: class/results/post_admin.php:105
+#: class/tests/post_admin.php:96
+#@ trainup
+msgid "Relationships"
+msgstr "Gerelateerd"
+
+#: class/groups/post_admin.php:140
+#: class/levels/post_admin.php:309
+#: class/levels/post_type.php:128
+#: view/backend/groups/relation_meta.php:4
+#: view/backend/groups/relation_meta.php:9
+#: view/backend/levels/relation_meta.php:4
+#, php-format
+#@ trainup
+msgid "View %1$s"
+msgstr "Bekijk %1$s"
+
+#: class/groups/post_type.php:68
+#: class/levels/post_type.php:64
+#: class/tests/post_type.php:64
+#, php-format
+#@ trainup
+msgid "Add a new %1$s"
+msgstr "Voeg een nieuwe %1$s toe"
+
+#: class/groups/post_type.php:69
+#: class/levels/post_admin.php:329
+#: class/levels/post_type.php:65
+#: class/tests/post_admin.php:221
+#: class/tests/post_type.php:65
+#: view/backend/levels/relation_meta.php:10
+#: view/backend/resources/relation_meta.php:4
+#: view/backend/results/relation_meta.php:10
+#: view/backend/results/relation_meta.php:15
+#: view/backend/results/test_archive.php:13
+#: view/backend/tests/relation_meta.php:19
+#, php-format
+#@ trainup
+msgid "Edit %1$s"
+msgstr "%1$s bewerken"
+
+#: class/groups/post_type.php:70
+#: class/levels/post_type.php:66
+#: class/pages/post_type.php:62
+#: class/questions/post_type.php:108
+#: class/resources/post_type.php:110
+#: class/results/post_type.php:108
+#: class/tests/post_type.php:66
+#: view/backend/emailer/index.php:28
+#: view/backend/groups/trainees_meta.php:4
+#@ trainup
+msgid "Search"
+msgstr "Zoeken"
+
+#: class/importer/helpers.php:72
+#@ trainup
+msgid "Error importing questions"
+msgstr "Vragen importeren mislukt"
+
+#: class/importer/helpers.php:76
+#, php-format
+#@ trainup
+msgid "%1$s of %2$s questions imported"
+msgstr "%1$s van de %2$s vragen geïmporteerd"
+
+#: class/importer/helpers.php:167
+#@ trainup
+msgid "Done"
+msgstr "Klaar"
+
+#: class/importer/helpers.php:168
+#@ trainup
+msgid "Cancel"
+msgstr "Cancel"
+
+#: class/importer/helpers.php:169
+#: view/backend/tests/questions_meta.php:12
+#@ trainup
+msgid "Import"
+msgstr "Importeren"
+
+#: class/importer/helpers.php:170
+#@ trainup
+msgid "No file selected"
+msgstr "Geen bestand geselecteerd"
+
+#: class/levels/helpers.php:136
+#: class/tests/helpers.php:161
+#, php-format
+#@ trainup
+msgid "Are you sure you want to delete this %1$s?"
+msgstr "Weet je zeker dat je deze %1$s wilt verwijderen?"
+
+#: class/levels/post_admin.php:101
+#: class/levels/post_admin.php:218
+#, php-format
+#@ trainup
+msgid "%1$s access"
+msgstr "%1$s toegang"
+
+#: class/levels/post_admin.php:106
+#: class/levels/post_admin.php:222
+#, php-format
+#@ trainup
+msgid "%1$s eligibility"
+msgstr "%1$s keuze"
+
+#: class/levels/post_admin.php:219
+#, php-format
+#@ trainup
+msgid "By default, %1$s can be accessed by all %2$s. Using the %3$s-access box you can choose to limit access to a particular %4$s (and its relations), to 1 or more %5$s."
+msgstr "Als standaardinstelling hebben alle %2$s toegang tot %1$s. Je kunt de %3$s-toegangsmodule gebruiken om beperkte toegang te verlenen aan een specifieke groep %4$s (en gerelateerde bestanden) voor een of meerdere %5$s."
+
+#: class/levels/post_admin.php:223
+#, php-format
+#@ trainup
+msgid "You can use the %1$s-eligibility box to prevent access to a %2$s (and its relations) unless a %1$s has passed a particular %3$s."
+msgstr "Je kunt de %1$s-keuze module gebruiken om toegang tot een %2$s met bijbehorende bestanden te ontzeggen totdat een %1$s een bepaald %3$s heeft afgerond."
+
+#: class/levels/post_admin.php:335
+#: view/backend/levels/relation_meta.php:14
+#, php-format
+#@ trainup
+msgid "Add %1$s"
+msgstr "%1$s toevoegen"
+
+#: class/levels/post_type.php:96
+#, php-format
+#@ trainup
+msgid "%1$s_title"
+msgstr "%1$s_title"
+
+#: class/levels/post_type.php:100
+#, php-format
+#@ trainup
+msgid "list_%1$s_%2$s"
+msgstr "list_%1$s_%2$s"
+
+#: class/levels/post_type.php:106
+#, php-format
+#@ trainup
+msgid "number_of_%1$s_%2$s"
+msgstr "number_of_%1$s_%2$s"
+
+#: class/levels/post_type.php:110
+#: class/levels/post_type.php:118
+#: class/pages/post_type.php:113
+#, php-format
+#@ trainup
+msgid "%1$s_has_%2$s"
+msgstr "%1$s_has_%2$s"
+
+#: class/levels/post_type.php:114
+#: class/levels/post_type.php:122
+#: class/pages/post_type.php:117
+#, php-format
+#@ trainup
+msgid "!%1$s_has_%2$s"
+msgstr "!%1$s_has_%2$s"
+
+#: class/levels/post_type.php:126
+#, php-format
+#@ trainup
+msgid "%1$s_%2$s_link"
+msgstr "%1$s_%2$s_link"
+
+#: class/levels/post_type.php:132
+#, php-format
+#@ trainup
+msgid "list_sub_%1$s"
+msgstr "list_sub_%1$s"
+
+#: class/levels/post_type.php:136
+#, php-format
+#@ trainup
+msgid "has_sub_%1$s"
+msgstr "has_sub_%1$s"
+
+#: class/levels/post_type.php:140
+#, php-format
+#@ trainup
+msgid "!has_sub_%1$s"
+msgstr "!has_sub_%1$s"
+
+#: class/levels/post_type.php:144
+#, php-format
+#@ trainup
+msgid "number_of_sub_%1$s"
+msgstr "number_of_sub_%1$s"
+
+#: class/levels/post_type.php:148
+#, php-format
+#@ trainup
+msgid "%1$s_%2$s_results_table"
+msgstr "%1$s_%2$s_results_table"
+
+#: class/pages/page_edit_my_details.php:90
+#@ trainup
+msgid "Save changes"
+msgstr "Wijzigingen opslaan"
+
+#: class/pages/page_edit_my_details.php:156
+#@ trainup
+msgid "Your details were updated"
+msgstr "Je gegevens zijn geüpdated"
+
+#: class/pages/page_forgotten_password.php:98
+#@ trainup
+msgid "Please check your inbox"
+msgstr "Kijk in je mailbox"
+
+#: class/pages/page_forgotten_password.php:118
+#@ trainup
+msgid "Reset password"
+msgstr "Wachtwoord resetten"
+
+#: class/pages/page_forgotten_password.php:119
+#: class/pages/page_sign_up.php:238
+#, php-format
+#@ trainup
+msgid "Hi %1$s,"
+msgstr "Hallo %1$s,"
+
+#: class/pages/page_forgotten_password.php:121
+#, php-format
+#@ trainup
+msgid "You have requested a new password on %1$s"
+msgstr "Je hebt een aanvraag gedaan voor een nieuw wachtwoord voor %1$s"
+
+#: class/pages/page_forgotten_password.php:123
+#@ trainup
+msgid "Choose a new password by clicking the link below..."
+msgstr "Stel een nieuw wachtwoord in door op onderstaande link te klikken..."
+
+#: class/pages/page_reset_password.php:83
+#: class/pages/page_sign_up.php:277
+#@ trainup
+msgid "Invalid key"
+msgstr "Ongeldige actie"
+
+#: class/pages/page_reset_password.php:112
+#@ trainup
+msgid "Password saved"
+msgstr "Wachtwoord opgeslagen"
+
+#: class/pages/page_sign_up.php:81
+#@ trainup
+msgid "Sign up"
+msgstr "Inschrijven"
+
+#: class/pages/page_sign_up.php:157
+#@ trainup
+msgid "Sign up successful!"
+msgstr "Inschrijving succesvol!"
+
+#: class/pages/page_sign_up.php:169
+#@ trainup
+msgid "Sign up successful. Please check your inbox"
+msgstr "Inschrijving succesvol. Kijk in uw mailbox"
+
+#: class/pages/page_sign_up.php:204
+#, php-format
+#@ trainup
+msgid "New %1$s sign up"
+msgstr "Nieuwe %1$s inschrijving"
+
+#: class/pages/page_sign_up.php:211
+#, php-format
+#@ trainup
+msgid "Welcome %1$s"
+msgstr "Welkom %1$s"
+
+#: class/pages/page_sign_up.php:237
+#@ trainup
+msgid "Confirm your email address"
+msgstr "Bevestig uw emailadres"
+
+#: class/pages/page_sign_up.php:240
+#, php-format
+#@ trainup
+msgid "You just signed up on %1$s"
+msgstr "Je hebt je zojuist ingeschreven voor %1$s"
+
+#: class/pages/page_sign_up.php:242
+#@ trainup
+msgid "Please confirm your email address by clicking the link below..."
+msgstr "Bevestig uw emailadres door op onderstaande link te klikken..."
+
+#: class/pages/page_sign_up.php:269
+#@ trainup
+msgid "Welcome!"
+msgstr "Welkom!"
+
+#: class/pages/post_type.php:58
+#@ trainup
+msgid "Pages"
+msgstr "Pagina's"
+
+#: class/pages/post_type.php:59
+#@ trainup
+msgid "Page"
+msgstr "Pagina"
+
+#: class/pages/post_type.php:60
+#@ trainup
+msgid "Add a new page"
+msgstr "Nieuwe pagina toevoegen"
+
+#: class/pages/post_type.php:61
+#@ trainup
+msgid "Edit page"
+msgstr "Pagina bewerken"
+
+#: class/pages/post_type.php:88
+#@ trainup
+msgid "My account"
+msgstr "Mijn account"
+
+#: class/pages/post_type.php:92
+#@ trainup
+msgid "Edit my details"
+msgstr "Bewerk mijn gegevens"
+
+#: class/pages/post_type.php:96
+#@ trainup
+msgid "View my results"
+msgstr "Toon mijn resultaten"
+
+#: class/pages/post_type.php:99
+#@ trainup
+msgid "login_link"
+msgstr "login_link"
+
+#: class/pages/post_type.php:101
+#: view/frontend/page/login.php:51
+#@ trainup
+msgid "Login"
+msgstr "Inloggen"
+
+#: class/pages/post_type.php:106
+#@ trainup
+msgid "logout_link"
+msgstr "logout_link"
+
+#: class/pages/post_type.php:108
+#@ trainup
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: class/pages/post_type.php:121
+#, php-format
+#@ trainup
+msgid "list_%1$s_levels"
+msgstr "list_%1$s_levels"
+
+#: class/pages/post_type.php:125
+#, php-format
+#@ trainup
+msgid "%1$s_has_results"
+msgstr "%1$s_has_results"
+
+#: class/pages/post_type.php:129
+#, php-format
+#@ trainup
+msgid "!%1$s_has_results"
+msgstr "!%1$s_has_results"
+
+#: class/pages/post_type.php:133
+#, php-format
+#@ trainup
+msgid "list_%1$s_results"
+msgstr "list_%1$s_results"
+
+#: class/pages/post_type.php:137
+#@ trainup
+msgid "results_table"
+msgstr "results_table"
+
+#: class/plugin.php:246
+#@ trainup
+msgid "Plugin already started."
+msgstr "Plugin is al in werking"
+
+#: class/plugin.php:613
+#: class/settings/admin.php:73
+#: class/settings/admin.php:74
+#: class/settings/admin.php:161
+#: view/backend/page/settings.php:12
+#@ trainup
+msgid "Settings"
+msgstr "Instellingen"
+
+#: class/questions/helpers.php:38
+#@ trainup
+msgid "Multiple choice"
+msgstr "Meerkeuze"
+
+#: class/questions/helpers.php:39
+#: class/questions/post_admin.php:116
+#@ trainup
+msgid "Single answer"
+msgstr "Enkelvoudig antwoord"
+
+#: class/questions/helpers.php:64
+#@ trainup
+msgid "is greater than"
+msgstr "is meer dan"
+
+#: class/questions/helpers.php:68
+#@ trainup
+msgid "is greater than or equal to"
+msgstr "is meer dan of gelijk aan"
+
+#: class/questions/helpers.php:72
+#@ trainup
+msgid "is less than"
+msgstr "is minder dan"
+
+#: class/questions/helpers.php:76
+#@ trainup
+msgid "is less than or equal to"
+msgstr "is minder dan of gelijk aan"
+
+#: class/questions/helpers.php:80
+#@ trainup
+msgid "contains"
+msgstr "bevat"
+
+#: class/questions/helpers.php:84
+#@ trainup
+msgid "is between (N,M)"
+msgstr "zit tussen (N,M)"
+
+#: class/questions/helpers.php:88
+#@ trainup
+msgid "matches regular expression"
+msgstr "komt overeen met ingevoerde uitdrukking"
+
+#: class/questions/helpers.php:199
+#: class/questions/post.php:98
+#@ trainup
+msgid "Your answer was saved"
+msgstr "Je antwoord is opgeslagen"
+
+#: class/questions/helpers.php:224
+#@ trainup
+msgid "Are you sure you want to delete this answer?"
+msgstr "Weet je zeker dat je dit antwoord wilt verwijderen?"
+
+#: class/questions/helpers.php:226
+#@ trainup
+msgid "Error"
+msgstr "Fout"
+
+#: class/questions/post_admin.php:55
+#, php-format
+#@ trainup
+msgid "Edit %1$s for %2$s"
+msgstr "Bewerk %1$s voor %2$s"
+
+#: class/questions/post_admin.php:106
+#@ trainup
+msgid "Question type"
+msgstr "Soort vraag"
+
+#: class/questions/post_admin.php:111
+#@ trainup
+msgid "Multiple choice answers"
+msgstr "Meerkeuze vragen"
+
+#: class/questions/post_admin.php:223
+#@ trainup
+msgid "Single-answer questions require an answer to be set"
+msgstr "Enkelvoudige vragen moeten een ingesteld antwoord hebben"
+
+#: class/questions/post_admin.php:235
+#@ trainup
+msgid "Multiple choice questions require at least two answers"
+msgstr "Meerkeuze vragen moeten tenminste twee ingevoerde antwoorden hebben"
+
+#: class/questions/post_admin.php:237
+#@ trainup
+msgid "You must choose a correct answer"
+msgstr "Je moet het juiste antwoord selecteren"
+
+#: class/questions/post_admin.php:295
+#, php-format
+#@ trainup
+msgid "You cannot edit this question because its %1$s has been started"
+msgstr "Je kunt deze vraag niet bewerken omdat dit %1$s al is gestart"
+
+#: class/questions/post_admin.php:316
+#: class/settings/helpers.php:129
+#: class/tests/post_admin.php:83
+#@ trainup
+msgid "Questions"
+msgstr "Vragen"
+
+#: class/questions/post_admin.php:319
+#@ trainup
+msgid "Add question"
+msgstr "Vraag toevoegen"
+
+#: class/questions/post_admin.php:321
+#@ trainup
+msgid "Edit question"
+msgstr "Vraag bewerken"
+
+#: class/questions/post_type.php:90
+#@ trainup
+msgid "question"
+msgstr "vraag"
+
+#: class/questions/post_type.php:104
+#, php-format
+#@ trainup
+msgid "%1$s Questions"
+msgstr "%1$s Vragen"
+
+#: class/questions/post_type.php:105
+#, php-format
+#@ trainup
+msgid "%1$s Question"
+msgstr "%1$s Vraag"
+
+#: class/questions/post_type.php:106
+#, php-format
+#@ trainup
+msgid "Add a new Question to %1$s"
+msgstr "Voeg een nieuwe vraag toe aan %1$s"
+
+#: class/questions/post_type.php:107
+#, php-format
+#@ trainup
+msgid "Edit Question for %1$s"
+msgstr "Bewerk vraag van %1$s"
+
+#: class/questions/post_type.php:130
+#@ trainup
+msgid "random_number"
+msgstr "random_number"
+
+#: class/resources/post_type.php:108
+#, php-format
+#@ trainup
+msgid "Add new %1$s %2$s"
+msgstr "Voeg nieuwe %1$s %2$s toe"
+
+#: class/resources/post_type.php:109
+#: class/results/post_type.php:107
+#: view/backend/forms/editor.php:5
+#: view/backend/results/test_archive.php:133
+#: view/backend/results/user_archive.php:146
+#@ trainup
+msgid "Edit"
+msgstr "Bewerken"
+
+#: class/results/admin.php:102
+#: class/results/admin.php:103
+#: class/results/admin.php:283
+#: class/results/post_admin.php:97
+#: class/results/post_admin.php:328
+#: class/results/post_admin.php:381
+#: class/tests/post_admin.php:118
+#: view/backend/results/index.php:3
+#@ trainup
+msgid "Results"
+msgstr "Resultaten"
+
+#: class/results/admin.php:293
+#: view/backend/results/test_archive.php:71
+#: view/backend/results/user_archive.php:79
+#@ trainup
+msgid "Answers"
+msgstr "Antwoorden"
+
+#: class/results/helpers.php:154
+#: class/results/post_admin.php:220
+#: view/backend/results/results_meta.php:19
+#: view/backend/results/results_meta.php:21
+#: view/backend/results/test_archive.php:119
+#: view/backend/results/user_archive.php:132
+#@ trainup
+msgid "Yes"
+msgstr "Ja"
+
+#: class/results/helpers.php:154
+#: class/results/post_admin.php:220
+#: view/backend/results/results_meta.php:19
+#: view/backend/results/results_meta.php:21
+#: view/backend/results/test_archive.php:119
+#: view/backend/results/user_archive.php:132
+#@ trainup
+msgid "No"
+msgstr "Nee"
+
+#: class/results/helpers.php:159
+#: view/backend/results/test_archive.php:33
+#: view/backend/results/user_archive.php:41
+#@ trainup
+msgid "Date"
+msgstr "Datum"
+
+#: class/results/helpers.php:160
+#: view/backend/results/test_archive.php:41
+#: view/backend/results/user_archive.php:49
+#@ trainup
+msgid "Duration"
+msgstr "Duur"
+
+#: class/results/helpers.php:161
+#@ trainup
+msgid "Name"
+msgstr "Naam"
+
+#: class/results/helpers.php:163
+#: class/results/post_admin.php:131
+#: class/results/post_admin.php:152
+#: view/backend/results/results_meta.php:3
+#: view/backend/results/test_archive.php:45
+#: view/backend/results/user_archive.php:53
+#: view/frontend/results/table.php:22
+#@ trainup
+msgid "Mark"
+msgstr "Score"
+
+#: class/results/helpers.php:164
+#: class/results/post_admin.php:132
+#: view/backend/results/results_meta.php:4
+#: view/backend/results/test_archive.php:48
+#: view/backend/results/user_archive.php:56
+#: view/frontend/results/table.php:32
+#@ trainup
+msgid "Out of"
+msgstr "Van de"
+
+#: class/results/helpers.php:166
+#: class/results/post_admin.php:134
+#: view/backend/results/results_meta.php:6
+#: view/backend/results/test_archive.php:57
+#: view/backend/results/user_archive.php:65
+#: view/frontend/results/table.php:42
+#@ trainup
+msgid "Grade"
+msgstr "Beoordeling"
+
+#: class/results/helpers.php:167
+#: class/results/post_admin.php:135
+#: class/results/post_admin.php:154
+#: view/backend/results/results_meta.php:7
+#: view/backend/results/test_archive.php:62
+#: view/backend/results/user_archive.php:70
+#@ trainup
+msgid "Passed"
+msgstr "Geslaagd"
+
+#: class/results/helpers.php:168
+#: view/backend/results/results_meta.php:9
+#: view/backend/results/test_archive.php:67
+#: view/backend/results/user_archive.php:75
+#@ trainup
+msgid "Resit"
+msgstr "Herkansing"
+
+#: class/results/post.php:94
+#: class/results/post_type.php:104
+#, php-format
+#@ trainup
+msgid "%1$s results"
+msgstr "%1$s resultaten"
+
+#: class/results/post.php:333
+#, php-format
+#@ trainup
+msgid "New %1$s result comment"
+msgstr "Nieuwe reactie op resultaat van %1$s"
+
+#: class/results/post.php:335
+#, php-format
+#@ trainup
+msgid "New comment on %1$s %2$s result for %3$s"
+msgstr "Nieuwe reactie voor %3$s op het resultaat bij %1$s %1$s"
+
+#: class/results/post_admin.php:72
+#, php-format
+#@ trainup
+msgid "You cannot manually add %1$s results"
+msgstr "Je kunt niet handmatig %1$s resultaten toevoegen"
+
+#: class/results/post_admin.php:136
+#: class/tests/post_admin.php:119
+#: class/trainees/user_admin.php:117
+#@ trainup
+msgid "Archive"
+msgstr "Archief"
+
+#: class/results/post_admin.php:235
+#: class/tests/post_admin.php:267
+#: class/trainees/user_admin.php:170
+#: view/backend/tests/relation_meta.php:9
+#@ trainup
+msgid "View archive"
+msgstr "Archief bekijken"
+
+#: class/results/post_type.php:90
+#@ trainup
+msgid "result"
+msgstr "resultaat"
+
+#: class/results/post_type.php:105
+#, php-format
+#@ trainup
+msgid "%1$s result"
+msgstr "%1$s resultaat"
+
+#: class/results/post_type.php:106
+#, php-format
+#@ trainup
+msgid "Add new %1$s result"
+msgstr "Voeg een nieuw %1$s resultaat toe"
+
+#: class/results/post_type.php:134
+#, php-format
+#@ trainup
+msgid "result_%1$s_title"
+msgstr "result_%1$s_title"
+
+#: class/results/post_type.php:138
+#, php-format
+#@ trainup
+msgid "result_%1$s_link"
+msgstr "result_%1$s_link"
+
+#: class/results/post_type.php:139
+#@ trainup
+msgid "resit"
+msgstr "herkansing"
+
+#: class/results/post_type.php:142
+#@ trainup
+msgid "result_mark"
+msgstr "result_mark"
+
+#: class/results/post_type.php:146
+#@ trainup
+msgid "result_out_of"
+msgstr "result_out_of"
+
+#: class/results/post_type.php:150
+#@ trainup
+msgid "result_percentage"
+msgstr "result_percentage"
+
+#: class/results/post_type.php:154
+#: class/results/post_type.php:186
+#@ trainup
+msgid "result_grade"
+msgstr "result_grade"
+
+#: class/results/post_type.php:158
+#, php-format
+#@ trainup
+msgid "passed_%1$s"
+msgstr "passed_%1$s"
+
+#: class/results/post_type.php:162
+#, php-format
+#@ trainup
+msgid "!passed_%1$s"
+msgstr "!passed_%1$s"
+
+#: class/results/post_type.php:166
+#, php-format
+#@ trainup
+msgid "can_resit_%1$s"
+msgstr "can_resit_%1$s"
+
+#: class/results/post_type.php:170
+#, php-format
+#@ trainup
+msgid "!can_resit_%1$s"
+msgstr "!can_resit_%1$s"
+
+#: class/results/post_type.php:174
+#, php-format
+#@ trainup
+msgid "%1$s_first_name"
+msgstr "%1$s_first_name"
+
+#: class/results/post_type.php:182
+#@ trainup
+msgid "archived_answers"
+msgstr "archived_answers"
+
+#: class/settings/admin.php:312
+#@ trainup
+msgid "Invalid settings"
+msgstr "Verkeerde instellingen"
+
+#: class/settings/helpers.php:80
+#: class/settings/helpers.php:305
+#: class/settings/helpers.php:318
+#@ trainup
+msgid "Trainees"
+msgstr "Studenten"
+
+#: class/settings/helpers.php:81
+#: class/settings/helpers.php:311
+#@ trainup
+msgid "Trainee"
+msgstr "Student"
+
+#: class/settings/helpers.php:82
+#: class/settings/helpers.php:218
+#: class/tests/post.php:616
+#@ trainup
+msgid "Test"
+msgstr "Examen"
+
+#: class/settings/helpers.php:83
+#: class/settings/helpers.php:364
+#@ trainup
+msgid "Group"
+msgstr "Groep"
+
+#: class/settings/helpers.php:84
+#: class/settings/helpers.php:358
+#: class/settings/helpers.php:371
+#@ trainup
+msgid "Groups"
+msgstr "Groepen"
+
+#: class/settings/helpers.php:85
+#: class/settings/helpers.php:162
+#: class/settings/helpers.php:175
+#@ trainup
+msgid "Levels"
+msgstr "Levels"
+
+#: class/settings/helpers.php:86
+#: class/settings/helpers.php:186
+#: class/settings/helpers.php:199
+#@ trainup
+msgid "Resources"
+msgstr "Documenten"
+
+#: class/settings/helpers.php:87
+#: class/settings/helpers.php:212
+#: class/settings/helpers.php:225
+#@ trainup
+msgid "Tests"
+msgstr "Examens"
+
+#: class/settings/helpers.php:88
+#: class/settings/helpers.php:384
+#: class/settings/helpers.php:397
+#@ trainup
+msgid "Group managers"
+msgstr "Teamleiders"
+
+#: class/settings/helpers.php:92
+#@ trainup
+msgid "General"
+msgstr "Algemeen"
+
+#: class/settings/helpers.php:96
+#@ trainup
+msgid "License number"
+msgstr "Licentienummer"
+
+#: class/settings/helpers.php:98
+#@ trainup
+msgid "(Enter a legitimate license number to enable updates)"
+msgstr "(Vul een geldig licentienummer in om updates in te schakelen)"
+
+#: class/settings/helpers.php:103
+#: class/settings/helpers.php:149
+#@ trainup
+msgid "Title"
+msgstr "Titel"
+
+#: class/settings/helpers.php:104
+#@ trainup
+msgid "Training"
+msgstr "Training"
+
+#: class/settings/helpers.php:109
+#@ trainup
+msgid "Main slug"
+msgstr "Hoofd url"
+
+#: class/settings/helpers.php:114
+#@ trainup
+msgid "Use built in theme"
+msgstr "Gebruik het ingebouwde thema"
+
+#: class/settings/helpers.php:115
+#: class/settings/helpers.php:205
+#: class/settings/helpers.php:231
+#: class/settings/helpers.php:238
+#: class/settings/helpers.php:264
+#: class/settings/helpers.php:334
+#: class/settings/helpers.php:377
+#: class/settings/helpers.php:408
+#@ trainup
+msgid "Enabled"
+msgstr "Ingeschakeld"
+
+#: class/settings/helpers.php:120
+#@ trainup
+msgid "Stylesheets"
+msgstr "Sjablonen"
+
+#: class/settings/helpers.php:121
+#@ trainup
+msgid "Include theme CSS"
+msgstr "Gebruik css van het thema"
+
+#: class/settings/helpers.php:126
+#@ trainup
+msgid "Arrow key navigation"
+msgstr "Pijlnavigatie"
+
+#: class/settings/helpers.php:138
+#@ trainup
+msgid "Login by"
+msgstr "Inloggen door"
+
+#: class/settings/helpers.php:140
+#: view/frontend/forms/user.php:49
+#: view/frontend/page/forgotten_password.php:5
+#: view/frontend/page/login.php:20
+#@ trainup
+msgid "Email address"
+msgstr "Email adres"
+
+#: class/settings/helpers.php:141
+#: view/frontend/forms/user.php:34
+#: view/frontend/page/login.php:6
+#@ trainup
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: class/settings/helpers.php:147
+#@ trainup
+msgid "Header"
+msgstr "Header"
+
+#: class/settings/helpers.php:150
+#@ trainup
+msgid "Image"
+msgstr "Afbeelding"
+
+#: class/settings/helpers.php:156
+#@ trainup
+msgid "Header image"
+msgstr "Header afbeelding"
+
+#: class/settings/helpers.php:167
+#: class/settings/helpers.php:191
+#: class/settings/helpers.php:217
+#: class/settings/helpers.php:310
+#: class/settings/helpers.php:363
+#: class/settings/helpers.php:389
+#@ trainup
+msgid "Singular"
+msgstr "Enkelvoud"
+
+#: class/settings/helpers.php:168
+#@ trainup
+msgid "Level"
+msgstr "Level"
+
+#: class/settings/helpers.php:169
+#@ trainup
+msgid "e.g. Level, Course, Subject"
+msgstr "Bijvoorbeeld  Level, Examen, Onderwerp"
+
+#: class/settings/helpers.php:174
+#: class/settings/helpers.php:198
+#: class/settings/helpers.php:224
+#: class/settings/helpers.php:317
+#: class/settings/helpers.php:370
+#: class/settings/helpers.php:396
+#@ trainup
+msgid "Plural"
+msgstr "Meervoud"
+
+#: class/settings/helpers.php:176
+#@ trainup
+msgid "e.g. Levels, Courses, Subjects"
+msgstr "Bijvoorbeeld Levels, examens, onderwerpen"
+
+#: class/settings/helpers.php:180
+#@ trainup
+msgid "Default template"
+msgstr "Standaard sjabloon"
+
+#: class/settings/helpers.php:192
+#@ trainup
+msgid "Resource"
+msgstr "Document"
+
+#: class/settings/helpers.php:193
+#@ trainup
+msgid "e.g. Material, Resource, or Slide etc."
+msgstr "Bijvoorbeeld materiaal, document, pagina"
+
+#: class/settings/helpers.php:200
+#@ trainup
+msgid "e.g. Material, Resources, or Slides etc."
+msgstr "Bijvoorbeeld materialen, documenten, pagina's"
+
+#: class/settings/helpers.php:204
+#, php-format
+#@ trainup
+msgid "Prevent access during %1$s"
+msgstr "Voorkom toegang tijdens %1$s"
+
+#: class/settings/helpers.php:207
+#@ trainup
+msgid "(Savvy web-users can subvert this)"
+msgstr "(Hoewel mensen die handig zijn met internet dit natuurlijk wel kunnen omzeilen)"
+
+#: class/settings/helpers.php:219
+#@ trainup
+msgid "e.g. Test, Quiz etc."
+msgstr "Bijvoorbeeld examen, quiz etc."
+
+#: class/settings/helpers.php:226
+#@ trainup
+msgid "e.g. Tests, Exams etc."
+msgstr "Bijvoorbeeld examens, testen etc"
+
+#: class/settings/helpers.php:230
+#@ trainup
+msgid "Trim answer whitespace"
+msgstr "Verwijder lege ruimtes tussen tekst"
+
+#: class/settings/helpers.php:233
+#, php-format
+#@ trainup
+msgid "(Removes leading & trailing spaces from %1$s attempted answers)"
+msgstr "(Verwijdert lege ruimtes tussen de tekst bij de ingeleverde antwoorden van de %1$s)"
+
+#: class/settings/helpers.php:237
+#@ trainup
+msgid "Save answers via AJAX"
+msgstr "Sla antwoorden op via AJAX"
+
+#: class/settings/helpers.php:244
+#, php-format
+#@ trainup
+msgid "Default %1$s template"
+msgstr "Standaard %1$s sjabloon"
+
+#: class/settings/helpers.php:249
+#@ trainup
+msgid "Default result template"
+msgstr "Standaard resultaten sjabloon"
+
+#: class/settings/helpers.php:253
+#@ trainup
+msgid "Publish results"
+msgstr "Resultaten publiceren"
+
+#: class/settings/helpers.php:256
+#@ trainup
+msgid "Instantly"
+msgstr "Onmiddelijk"
+
+#: class/settings/helpers.php:257
+#@ trainup
+msgid "Manually"
+msgstr "Handmatig"
+
+#: class/settings/helpers.php:262
+#@ trainup
+msgid "Result comments"
+msgstr "Reactie op resultaten"
+
+#: class/settings/helpers.php:269
+#@ trainup
+msgid "Result comment notifications"
+msgstr "Notificaties van reacties op resultaten"
+
+#: class/settings/helpers.php:271
+#: class/settings/helpers.php:342
+#@ trainup
+msgid "Email administrators"
+msgstr "Email beheerders"
+
+#: class/settings/helpers.php:272
+#: class/settings/helpers.php:273
+#: class/settings/helpers.php:343
+#, php-format
+#@ trainup
+msgid "Email %1$s"
+msgstr "Email %1$s"
+
+#: class/settings/helpers.php:283
+#@ trainup
+msgid "Default grades"
+msgstr "Standaard beoordelingen"
+
+#: class/settings/helpers.php:286
+#: class/tests/helpers.php:179
+#@ trainup
+msgid "Unsuccessful"
+msgstr "Niet geslaagd"
+
+#: class/settings/helpers.php:290
+#: class/tests/helpers.php:180
+#: view/backend/forms/grade_selector.php:37
+#@ trainup
+msgid "Pass"
+msgstr "Geslaagd"
+
+#: class/settings/helpers.php:294
+#@ trainup
+msgid "Pass with Merit"
+msgstr "Voldoende"
+
+#: class/settings/helpers.php:298
+#@ trainup
+msgid "Pass with Distinction"
+msgstr "Ruim voldoende"
+
+#: class/settings/helpers.php:312
+#@ trainup
+msgid "e.g. Trainee, Student, Pupil"
+msgstr "Bijvoorbeeld Student"
+
+#: class/settings/helpers.php:319
+#@ trainup
+msgid "e.g. Trainees, Students, Pupils"
+msgstr "Bijvoorbeeld Studenten"
+
+#: class/settings/helpers.php:323
+#, php-format
+#@ trainup
+msgid "Can choose their %1$s"
+msgstr "Kunnen hun eigen %1$s kiezen"
+
+#: class/settings/helpers.php:325
+#@ trainup
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: class/settings/helpers.php:326
+#, php-format
+#@ trainup
+msgid "A single %1$s"
+msgstr "Een enkele %1$s"
+
+#: class/settings/helpers.php:327
+#, php-format
+#@ trainup
+msgid "Multiple %1$s"
+msgstr "Meerdere %1$s"
+
+#: class/settings/helpers.php:332
+#@ trainup
+msgid "Instant sign up"
+msgstr "Directe inschrijving"
+
+#: class/settings/helpers.php:335
+#@ trainup
+msgid "(Bypasses 'confirm your email address')"
+msgstr "(Omzeilt 'Bevestig uw emailadres')"
+
+#: class/settings/helpers.php:340
+#@ trainup
+msgid "Sign up notifications"
+msgstr "Inschrijf notificaties"
+
+#: class/settings/helpers.php:352
+#@ trainup
+msgid "Sign up confirmation email"
+msgstr "Inschrijf bevestigingsmail"
+
+#: class/settings/helpers.php:365
+#@ trainup
+msgid "e.g. Group, Class"
+msgstr "Bijvoorbeeld Groep"
+
+#: class/settings/helpers.php:372
+#@ trainup
+msgid "e.g. Groups, Teams"
+msgstr "Bijvoorbeeld groepen"
+
+#: class/settings/helpers.php:375
+#@ trainup
+msgid "Show on sign up"
+msgstr "Tonen bij inschrijving"
+
+#: class/settings/helpers.php:378
+#, php-format
+#@ trainup
+msgid "(%1$s must choose which %2$s they are in when signing up)"
+msgstr "(%1$s moeten kiezen bij welke %2$s zij willen horen als zij zich inschrijven)"
+
+#: class/settings/helpers.php:390
+#@ trainup
+msgid "Group manager"
+msgstr "Teamleider"
+
+#: class/settings/helpers.php:391
+#@ trainup
+msgid "e.g. Team leader, Overseer"
+msgstr "Bijvoorbeeld teamleider"
+
+#: class/settings/helpers.php:398
+#@ trainup
+msgid "e.g. Subject tutors, Branch managers"
+msgstr "Bijvoorbeeld filiaalmanagers"
+
+#: class/settings/helpers.php:403
+#@ trainup
+msgid "Tin Can API"
+msgstr "Tin Can API"
+
+#: class/settings/helpers.php:406
+#@ trainup
+msgid "Tin Can"
+msgstr "Tin Can"
+
+#: class/settings/helpers.php:409
+#@ trainup
+msgid "(Turn LRS requests on or off)"
+msgstr "(Schakel LRS verzoeken in of uit)"
+
+#: class/settings/helpers.php:415
+#@ trainup
+msgid "Version"
+msgstr "Versie"
+
+#: class/settings/helpers.php:420
+#@ trainup
+msgid "LRS API"
+msgstr "LRS API"
+
+#: class/settings/helpers.php:423
+#@ trainup
+msgid "The URL of your Learning Record Store"
+msgstr "De URL van je Learning Record Store"
+
+#: class/settings/helpers.php:427
+#@ trainup
+msgid "LRS username"
+msgstr "LRS gebruikersnaam"
+
+#: class/settings/helpers.php:432
+#@ trainup
+msgid "LRS password"
+msgstr "LRS wachtwoord"
+
+#: class/settings/helpers.php:437
+#@ trainup
+msgid "What to track"
+msgstr "Wat bij te houden"
+
+#: class/settings/helpers.php:439
+#, php-format
+#@ trainup
+msgid "%1$s attempts to answer a question"
+msgstr "%1$s is bezig een antwoord te formuleren"
+
+#: class/settings/helpers.php:440
+#, php-format
+#@ trainup
+msgid "%1$s starts a %2$s"
+msgstr "%1$s begint aan een %2$s"
+
+#: class/settings/helpers.php:441
+#, php-format
+#@ trainup
+msgid "%1$s completes a %2$s (passes or fails)"
+msgstr "%1$s rond een %2$s af (geslaagd of niet)"
+
+#: class/tests/helpers.php:116
+#@ trainup
+msgid "Are you sure you want to delete this question?"
+msgstr "Weet je zeker dat je deze vraag wilt verwijderen?"
+
+#: class/tests/helpers.php:117
+#, php-format
+#@ trainup
+msgid "Resetting a %1$s will delete the answers of any %2$s who are currently taking this %1$s. (Meaning they will have to start again!).%3$sIt will also allow %2$s who have already taken this test to take it again without it being an official re-sit.%3$sAre you sure you want to continue?"
+msgstr "Als je een %1$s reset zullen alle antwoorden van alle %2$s die aan dit %1$s meedoen ook verwijderd worden. (Dit betekent concreet dat iedereen overnieuw moet beginnen!) %3$s Het zorgt er ook voor dat %2$s die het examen al hebben afgelegd het examen moeten/kunnen over doen, zonder dat dit een officiële herkansing is. %3$s Ben je er zeker van dat je hiermee door wilt gaan?"
+
+#: class/tests/helpers.php:143
+#@ trainup
+msgid "You have run out of time!"
+msgstr "Je tijd is verstreken!"
+
+#: class/tests/helpers.php:145
+#@ trainup
+msgid ""
+"Are you sure you want to submit your answers?\n"
+"(You cannot undo this action)"
+msgstr "Weet je zeker dat je je antwoorden in wilt leveren? (Je kunt dit niet ongedaan maken)"
+
+#: class/tests/post.php:558
+#, php-format
+#@ trainup
+msgid "No questions found for this %1$s"
+msgstr "Geen vragen voor dit/deze %1$s gevonden"
+
+#: class/tests/post.php:995
+#, php-format
+#@ trainup
+msgid "Average %1$s performance"
+msgstr "Gemiddelde %1$s prestatie"
+
+#: class/tests/post_admin.php:78
+#@ trainup
+msgid "Options"
+msgstr "Opties"
+
+#: class/tests/post_admin.php:88
+#, php-format
+#@ trainup
+msgid "%1$s grades"
+msgstr "%1$s beoordelingen"
+
+#: class/tests/post_admin.php:244
+#: view/backend/results/index.php:30
+#: view/backend/tests/relation_meta.php:4
+#@ trainup
+msgid "View results"
+msgstr "Bekijk resultaten"
+
+#: class/tests/post_admin.php:298
+#, php-format
+#@ trainup
+msgid "No %1$s specified"
+msgstr "Geen %1$s geselecteerd"
+
+#: class/tests/post_admin.php:386
+#@ trainup
+msgid "Question deleted"
+msgstr "Vraag verwijderd"
+
+#: class/tests/post_admin.php:391
+#, php-format
+#@ trainup
+msgid "%1$s reset"
+msgstr "%1$s gereset"
+
+#: class/tests/post_type.php:91
+#, php-format
+#@ trainup
+msgid "%1$s_%2$s_title"
+msgstr "%1$s_%2$s_title"
+
+#: class/tests/post_type.php:95
+#, php-format
+#@ trainup
+msgid "number_of_%1$s_questions"
+msgstr "number_of_%1$s_questions"
+
+#: class/tests/post_type.php:99
+#, php-format
+#@ trainup
+msgid "%1$s_started_%2$s"
+msgstr "%1$s_started_%2$s"
+
+#: class/tests/post_type.php:103
+#, php-format
+#@ trainup
+msgid "!%1$s_started_%2$s"
+msgstr "!%1$s_started_%2$s"
+
+#: class/tests/post_type.php:107
+#, php-format
+#@ trainup
+msgid "%1$s_finished_%2$s"
+msgstr "%1$s_finished_%2$s"
+
+#: class/tests/post_type.php:111
+#, php-format
+#@ trainup
+msgid "!%1$s_finished_%2$s"
+msgstr "!%1$s_finished_%2$s"
+
+#: class/tests/post_type.php:115
+#, php-format
+#@ trainup
+msgid "%1$s_submitted_answers"
+msgstr "%1$s_submitted_answers"
+
+#: class/tests/post_type.php:119
+#, php-format
+#@ trainup
+msgid "!%1$s_submitted_answers"
+msgstr "!%1$s_submitted_answers"
+
+#: class/tests/post_type.php:123
+#, php-format
+#@ trainup
+msgid "list_%1$s_questions"
+msgstr "list_%1$s_questions"
+
+#: class/tests/post_type.php:127
+#, php-format
+#@ trainup
+msgid "start_%1$s_link"
+msgstr "start_%1$s_link"
+
+#: class/tests/post_type.php:129
+#, php-format
+#@ trainup
+msgid "Start the %1$s"
+msgstr "Start de %1$s"
+
+#: class/tests/post_type.php:134
+#, php-format
+#@ trainup
+msgid "finish_%1$s_link"
+msgstr "finish_%1$s_link"
+
+#: class/tests/post_type.php:136
+#@ trainup
+msgid "Submit my answers"
+msgstr "Lever mijn antwoorden in"
+
+#: class/tests/post_type.php:141
+#, php-format
+#@ trainup
+msgid "%1$s_time_remaining"
+msgstr "%1$s_time_remaining"
+
+#: class/tests/post_type.php:147
+#, php-format
+#@ trainup
+msgid "%1$s_percent_complete"
+msgstr "%1$s_percent_complete"
+
+#: class/tests/post_type.php:151
+#, php-format
+#@ trainup
+msgid "%1$s_results_table"
+msgstr "%1$s_results_table"
+
+#: class/trainees/user_admin.php:191
+#, php-format
+#@ trainup
+msgid "Select one or more %1$s that this %2$s belongs to."
+msgstr "Selecteer een of meerdere %1$s waar deze %2$s toe behoort."
+
+#: class/trainees/user_admin.php:258
+#, php-format
+#@ trainup
+msgid "%1$s currently taking %2$s"
+msgstr "%1$s is op dit moment bezig aan %2$s"
+
+#: class/widgets/dashboard.php:35
+#, php-format
+#@ trainup
+msgid "%1$s recent activity"
+msgstr "%1$s recente activiteit"
+
+#: view/archived_answers.php:10
+#@ trainup
+msgid "Attempt"
+msgstr "Mijn antwoord"
+
+#: view/archived_answers.php:42
+#: view/backend/results/test_archive.php:74
+#: view/backend/results/user_archive.php:82
+#@ trainup
+msgid "Result"
+msgstr "Resultaat"
+
+#: view/archived_answers.php:47
+#@ trainup
+msgid "Correct"
+msgstr "Correct"
+
+#: view/archived_answers.php:48
+#@ trainup
+msgid "Incorrect"
+msgstr "Incorrect"
+
+#: view/backend/emailer/index.php:3
+#@ trainup
+msgid "Email"
+msgstr "Email"
+
+#: view/backend/emailer/index.php:9
+#@ trainup
+msgid "From"
+msgstr "Van"
+
+#: view/backend/emailer/index.php:26
+#@ trainup
+msgid "To"
+msgstr "Naar"
+
+#: view/backend/emailer/index.php:30
+#@ trainup
+msgid "Add recipient"
+msgstr "Voeg ontvanger toe"
+
+#: view/backend/emailer/index.php:52
+#: view/backend/groups/trainees_meta.php:19
+#@ trainup
+msgid "Remove selected"
+msgstr "Verwijder selectie"
+
+#: view/backend/emailer/index.php:58
+#@ trainup
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: view/backend/emailer/index.php:63
+#@ trainup
+msgid "Body"
+msgstr "Inhoud"
+
+#: view/backend/forms/grade_selector.php:36
+#@ trainup
+msgid "Fail"
+msgstr "Fout"
+
+#: view/backend/forms/grade_selector.php:64
+#@ trainup
+msgid "Add another grade"
+msgstr "Voeg een beoordeling toe"
+
+#: view/backend/forms/image_upload.php:5
+#@ trainup
+msgid "Browse"
+msgstr "Bladeren"
+
+#: view/backend/groups/trainees_meta.php:5
+#@ trainup
+msgid "Add"
+msgstr "Toevoegen"
+
+#: view/backend/importer/index.php:11
+#, php-format
+#@ trainup
+msgid "Import questions into the %1$s"
+msgstr "Importeer vragen in de %1$s"
+
+#: view/backend/importer/index.php:25
+#@ trainup
+msgid "Supported formats include:"
+msgstr "Ondersteunde formaten zijn:"
+
+#: view/backend/importer/index.php:30
+#@ trainup
+msgid "Moodle XML"
+msgstr "Moodle XML"
+
+#: view/backend/misc/breadcrumb_trail.php:4
+#: view/frontend/theme/inc/layout.php:57
+#@ trainup
+msgid "You are here:"
+msgstr "Je bent hier:"
+
+#: view/backend/misc/update_message.php:4
+#, php-format
+#@ trainup
+msgid "%1$s is out of date. Please consider updating the plugin by visiting:"
+msgstr "%1$s is verouderd. Overweeg een update door de volgende pagina te bezoeken:"
+
+#: view/backend/page/settings.php:4
+#, php-format
+#@ trainup
+msgid "The Tin-Can API functionality is in beta. Please visit %1$s to submit suggestions."
+msgstr "De Tin-Can API functie is in beta versie. Bezoek %1$s voor vragen en suggesties."
+
+#: view/backend/questions/multiple_answers_meta.php:4
+#@ trainup
+msgid "Add another answer"
+msgstr "Voeg nog een antwoord toe"
+
+#: view/backend/questions/multiple_answers_meta.php:30
+#@ trainup
+msgid "Correct?"
+msgstr "Correct?"
+
+#: view/backend/questions/multiple_answers_meta.php:32
+#@ trainup
+msgid "Answer"
+msgstr "Antwoord"
+
+#: view/backend/questions/single_answer_meta.php:2
+#@ trainup
+msgid "The correct answer"
+msgstr "Het goede antwoord"
+
+#: view/backend/questions/single_answer_meta.php:20
+#, php-format
+#@ trainup
+msgid "If a %1$s entered..."
+msgstr "Als een student %1$s heeft ingevoerd.... "
+
+#: view/backend/questions/single_answer_meta.php:26
+#@ trainup
+msgid "...they would be:"
+msgstr "....dan is dat:"
+
+#: view/backend/questions/single_answer_meta.php:27
+#@ trainup
+msgid "incorrect"
+msgstr "incorrect"
+
+#: view/backend/resources/index.php:8
+#, php-format
+#@ trainup
+msgid "Please select which %1$s you would like to manage the %2$s for:"
+msgstr "Selecteer van welk(e) %1$s je de %2$s wilt beheren:"
+
+#: view/backend/resources/index.php:25
+#@ trainup
+msgid "Manage"
+msgstr "Beheer"
+
+#: view/backend/results/index.php:8
+#, php-format
+#@ trainup
+msgid "Please select which %1$s you would like to see the results for:"
+msgstr "Selecteer van welk(e) %1$s je de resultaten wilt bekijken:"
+
+#: view/backend/results/relation_meta.php:4
+#@ trainup
+msgid "View in archive"
+msgstr "Bekijk in archief"
+
+#: view/backend/results/results_meta.php:15
+#@ trainup
+msgid "Click to manually set a percentage"
+msgstr "Klik om handmatig een percentage in te stellen"
+
+#: view/backend/results/test_archive.php:17
+#, php-format
+#@ trainup
+msgid "Archived %1$s %2$s results"
+msgstr "Opgeslagen %1$s %2$s resultaten"
+
+#: view/backend/results/test_archive.php:28
+#@ trainup
+msgid "User"
+msgstr "Gebruiker"
+
+#: view/backend/results/test_archive.php:37
+#: view/backend/results/user_archive.php:45
+#@ trainup
+msgid "Time"
+msgstr "Tijd"
+
+#: view/backend/results/test_archive.php:148
+#: view/backend/results/user_archive.php:158
+#@ trainup
+msgid "Download as CSV"
+msgstr "Download als CSV-bestand"
+
+#: view/backend/results/test_archive.php:153
+#: view/backend/results/user_archive.php:163
+#@ trainup
+msgid "No archived results to display"
+msgstr "Geen opgeslagen resultaten om te tonen"
+
+#: view/backend/results/user_answers.php:3
+#: view/backend/results/user_archive.php:14
+#@ trainup
+msgid "Edit user"
+msgstr "Bewerk gebruiker"
+
+#: view/backend/results/user_answers.php:10
+#, php-format
+#@ trainup
+msgid "Archived answers for %1$s (%2$s)"
+msgstr "Opgeslagen antwoorden van %1$s (%2$s)"
+
+#: view/backend/results/user_answers.php:12
+#, php-format
+#@ trainup
+msgid "Archived answers for %1$s"
+msgstr "Opgeslagen antwoorden van %1$s"
+
+#: view/backend/results/user_archive.php:20
+#, php-format
+#@ trainup
+msgid "Archived %1$s results for %2$s"
+msgstr "Opgeslagen %1$s resultaten van %2$s"
+
+#: view/backend/results/user_archive.php:31
+#, php-format
+#@ trainup
+msgid "Toggle %1$s parents"
+msgstr "Switch %1$s ouders"
+
+#: view/backend/tests/options_meta.php:4
+#, php-format
+#@ trainup
+msgid "Select which %1$s this %2$s is for:"
+msgstr "Selecteer voor welk(e) %1$s dit/deze %2$s is:"
+
+#: view/backend/tests/options_meta.php:34
+#@ trainup
+msgid "Number of allowed re-sit attempts:"
+msgstr "Aantal toegestane herkansingen:"
+
+#: view/backend/tests/options_meta.php:42
+#@ trainup
+msgid "Time limit:"
+msgstr "Tijdslimiet:"
+
+#: view/backend/tests/options_meta.php:50
+#@ trainup
+msgid "Publish results:"
+msgstr "Publiceer resultaten"
+
+#: view/backend/tests/publish_meta.php:3
+#, php-format
+#@ trainup
+msgid "Reset %1$s"
+msgstr "Reset %1$s"
+
+#: view/backend/tests/questions_meta.php:7
+#@ trainup
+msgid "Add a new question"
+msgstr "Voeg een nieuwe vraag toe"
+
+#: view/backend/tests/questions_meta.php:33
+#@ trainup
+msgid "Untitled"
+msgstr "Zonder titel"
+
+#: view/backend/tests/questions_meta.php:46
+#@ trainup
+msgid "No questions added yet"
+msgstr "Nog geen vragen toegevoegd"
+
+#: view/backend/tests/questions_meta.php:53
+#, php-format
+#@ trainup
+msgid "Please save this %1$s before adding questions."
+msgstr "Sla deze %1$s op om vragen toe te kunnen voegen."
+
+#: view/backend/tests/relation_meta.php:14
+#, php-format
+#@ trainup
+msgid "View active %1$s"
+msgstr "Bekijk actieve %1$s"
+
+#: view/backend/widgets/recent_activity.php:17
+#@ trainup
+msgid "When"
+msgstr "Wanneer"
+
+#: view/backend/widgets/recent_activity.php:43
+#, php-format
+#@ trainup
+msgid "%1$s ago"
+msgstr "%1$s geleden"
+
+#: view/backend/widgets/recent_activity.php:52
+#@ trainup
+msgid "No activity to show just yet!"
+msgstr "Geen activiteit om te tonen!"
+
+#: view/frontend/forms/user.php:5
+#@ trainup
+msgid "First name"
+msgstr "Voornaam"
+
+#: view/frontend/forms/user.php:19
+#@ trainup
+msgid "Last name"
+msgstr "Achternaam"
+
+#: view/frontend/forms/user.php:64
+#: view/frontend/page/login.php:35
+#@ trainup
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: view/frontend/forms/user.php:68
+#@ trainup
+msgid "Leave blank to keep the same"
+msgstr "Laat leeg om je huidige instellingen te behouden"
+
+#: view/frontend/page/forgotten_password.php:23
+#@ trainup
+msgid "Get new password"
+msgstr "Vraag een nieuw wachtwoord aan"
+
+#: view/frontend/page/forgotten_password.php:31
+#@ trainup
+msgid "Back to Login"
+msgstr "Terug naar inloggen"
+
+#: view/frontend/page/login.php:66
+#@ trainup
+msgid "Forgotten password?"
+msgstr "Wachtwoord vergeten?"
+
+#: view/frontend/page/reset_password.php:5
+#@ trainup
+msgid "New password"
+msgstr "Nieuw wachtwoord"
+
+#: view/frontend/page/reset_password.php:17
+#@ trainup
+msgid "Confirm new password"
+msgstr "Bevestig nieuw wachtwoord"
+
+#: view/frontend/page/reset_password.php:37
+#@ trainup
+msgid "Save"
+msgstr "Opslaan"
+
+#: view/frontend/questions/answers.php:8
+#: view/frontend/questions/answers.php:41
+#@ trainup
+msgid "Your answer:"
+msgstr "Je antwoord:"
+
+#: view/frontend/questions/answers.php:28
+#: view/frontend/questions/answers.php:55
+#@ trainup
+msgid "Save my answer"
+msgstr "Sla mijn antwoord op"
+
+#: view/frontend/questions/answers.php:35
+#@ trainup
+msgid "No answers set for this Question"
+msgstr "Geen antwoorden ingesteld voor deze vraag"
+
+#: view/frontend/questions/pagination.php:4
+#: view/frontend/resources/pagination.php:4
+#@ trainup
+msgid "Prev"
+msgstr "Vorige"
+
+#: view/frontend/questions/pagination.php:9
+#: view/frontend/resources/pagination.php:9
+#@ trainup
+msgid "Next"
+msgstr "Volgende"
+
+#: class/results/helpers.php:172
+#: view/frontend/results/table.php:12
+#@ trainup
+msgid "Rank"
+msgstr "Positie"
+
+#: view/frontend/results/table.php:27
+#@ trainup
+msgid "Marks"
+msgstr "Scores"
+
+#: view/frontend/theme/inc/layout.php:99
+#, php-format
+#@ trainup
+msgid "Powered by %1$s"
+msgstr "Gemaakt door %1$s"
+
+#: class/levels/helpers.php:141
+#, php-format
+#@ trainup
+msgid "Doing so will also delete the related %1$s, %2$s, results & files."
+msgstr "Als je dit doet, zullen ook de bijbehorende %1$s, %2$s, resultaten en bestanden worden verwijderd."
+
+#: class/questions/helpers.php:244
+#@ trainup
+msgid "Uploading..."
+msgstr "Uploaden..."
+
+#: class/questions/post.php:144
+#: class/results/post.php:406
+#, php-format
+#@ default
+msgid "%1$s not found"
+msgstr "%1$s niet gevonden"
+
+#: class/results/helpers.php:122
+#, php-format
+#@ default
+msgid "This will delete old files uploaded to this %1$s. (%2$s latest uploaded files will remain)"
+msgstr "Met deze optie verwijder je oude geüploade bestanden van dit/deze %1$s(laatst geüploade bestanden van (de) %2$s zullen bewaard blijven)"
+
+#: class/results/post_admin.php:110
+#@ trainup
+msgid "File attachments"
+msgstr "Bestandsbijlages"
+
+#: class/results/post_admin.php:405
+#, php-format
+#@ trainup
+msgid "Deleting %1$s results"
+msgstr "%1$s resultaten verwijderen"
+
+#: class/results/post_admin.php:406
+#, php-format
+#@ trainup
+msgid "When a result post is deleted you are only throwing away a certificate of completion of a %1$s. All attempted answers and uploaded files remain in the archive."
+msgstr "Als een resultaatpagina is verwijderd, is daarmee enkel het certificaat verwijderd dat behoort bij het afronden van een test. Alle ingevoerde antwoorden en geüploade bestanden blijven bewaard in het archief."
+
+#: class/settings/helpers.php:240
+#@ trainup
+msgid "(Requires a modern browser with XHR2 support)"
+msgstr "(Vereist een moderne browser met XHR2 ondersteuning)"
+
+#: class/tests/helpers.php:116
+#@ trainup
+msgid "Doing so will also delete any files uploaded in response to it."
+msgstr "Als je dit doet worden alle bijbehorende geüploade bestanden ook verwijderd. "
+
+#: class/tests/helpers.php:165
+#@ trainup
+msgid "Doing so will also delete the related results and uploaded files."
+msgstr "Als je dit doet zullen ook de bijbehorende resultaten en geüploade bestanden worden verwijderd."
+
+#: class/tests/helpers.php:263
+#, php-format
+#@ trainup
+msgid "%1$s old file was deleted"
+msgid_plural "%1$s old files were deleted"
+msgstr[0] "Oud bestand van %1$s gewist"
+msgstr[1] "Oude bestanden van %1$s gewist"
+
+#: class/tests/helpers.php:264
+#, php-format
+#@ trainup
+msgid "%2$s file remains"
+msgid_plural "%2$s files remain"
+msgstr[0] "%2$s bestand blijft bewaard"
+msgstr[1] "%2$s bestanden blijven bewaard"
+
+#: class/tests/helpers.php:266
+#, php-format
+#@ trainup
+msgid " (saving %1$s)"
+msgstr " ( %1$s opslaan)"
+
+#: class/tests/helpers.php:268
+#, php-format
+#@ trainup
+msgid " (consuming %1$s)"
+msgstr " (%1$s vernietigen)"
+
+#: view/backend/results/test_archive.php:145
+#@ trainup
+msgid "Delete redundant files"
+msgstr "Overtollige bestanden verwijderen"
+
+#: view/backend/tests/questions_meta.php:23
+#@ trainup
+msgid "Question"
+msgstr "Vraag"
+
+#: class/results/post_type.php:178
+#, php-format
+#@ trainup
+msgid "%1$s_last_name"
+msgstr "%1$s_last_name"
+
+#: class/results/post_type.php:190
+#@ trainup
+msgid "result_date"
+msgstr "result_date"

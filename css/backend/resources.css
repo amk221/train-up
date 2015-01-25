@@ -1,0 +1,22 @@
+#edit-slug-box {
+  padding: 0 0 10px 0;
+}
+
+.tu-schedules thead th {
+  padding: 10px;
+}
+
+.tu-add-schedule td {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1
+}
+
+.tu-schedule-action {
+  text-align: right;
+  max-width: 15%
+}
+
+.tu-schedule-row-1,
+.tu-schedule.tu-schedule-1 {
+  opacity: .5
+}

@@ -1,0 +1,564 @@
+/* ---------------------
+ * Theme styles
+ * --------------------- */
+
+/**
+ * Elements: Base
+ */
+html {
+  background: #f1f1f1;
+}
+body {
+  color: #454545;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 300;
+}
+body, h1, h2, h3, h4, h5, h6, textarea, input, button {
+  font-weight: 300;
+  font-family:
+    'HelveticaNeue-Light',
+    'Helvetica Neue Light',
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    'Lucida Grande',
+    sans-serif;
+}
+dt {
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+}
+dt, dd {
+  margin-bottom: 5px
+}
+li {
+  list-style: inside;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/**
+ * Layout: Base
+ */
+.header-main,
+.article-main {
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid #e1e1e1
+}
+
+
+/**
+ * WordPress WYSIWYG
+ * http://codex.wordpress.org/Styling_Images_in_Posts_and_Pages
+ */
+img.alignright {float:right; margin:0 0 2em 2em}
+img.alignleft {float:left; margin:0 2em 2em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 2em 2em}
+a img.alignleft {float:left; margin:0 2em 2em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+/**
+ * Main header: Base
+ */
+.header-main a {
+  color: #454545;
+  text-decoration: none
+}
+.header-main .wrapper {
+  position: relative;
+}
+.header-main h1 img {
+  max-height: 60px;
+}
+.links-header {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -.5em;
+}
+
+/**
+ * Main header: Desktop
+ */
+@media only screen and (min-width: 800px) {
+  .header-main h1 img {
+    max-width: 200px;
+  }
+}
+
+/**
+ * Main header: Mobile / Tablet
+ */
+@media only screen and (max-width: 799px) {
+  .header-main h1 img {
+    max-width: 150px;
+  }
+}
+
+
+/**
+ * Main footer: Base
+ */
+.footer-main {
+  text-align: right;
+  padding: 1em 0;
+  font-size: 11px;
+}
+.footer-main a {
+  color: #777;
+  text-decoration: none
+}
+
+/**
+ * Main article: Base
+ */
+.article-main {
+  background: white;
+  padding: 2em 0 2em 0;
+}
+.heading-main {
+  margin-top: 0;
+}
+
+/**
+ * Buttons: Base
+ */
+button,
+.button,
+input[type=submit] {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 6px 15px 6px 15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .7);
+
+  background: #ccc;
+  background: -moz-linear-gradient(top, #f5f5f5 0%, #e1e1e1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e1e1e1));
+  background: -webkit-linear-gradient(top, #f5f5f5 0%,#e1e1e1 100%);
+  background: -o-linear-gradient(top, #f5f5f5 0%,#e1e1e1 100%);
+  background: -ms-linear-gradient(top, #f5f5f5 0%,#e1e1e1 100%);
+  background: linear-gradient(to bottom, #f5f5f5 0%,#e1e1e1 100%);
+}
+input[type=submit],
+button[type=submit] {
+  color: #f1f1f1;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .6);
+  font-weight: bold;
+
+  background: #ccc;
+  background: -moz-linear-gradient(top, #aaa 0%, #777 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aaa), color-stop(100%,#777));
+  background: -webkit-linear-gradient(top, #aaa 0%,#777 100%);
+  background: -o-linear-gradient(top, #aaa 0%,#777 100%);
+  background: -ms-linear-gradient(top, #aaa 0%,#777 100%);
+  background: linear-gradient(to bottom, #aaa 0%,#777 100%);
+}
+
+
+/**
+ * Breadcrumb trail: Base
+ */
+.breadcrumb-trail {
+  padding: .5em 0 .5em 0;
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid #e1e1e1
+}
+.you-are-here {
+  color: #aaa;
+}
+.breadcrumb-trail ol {
+  display: inline;
+  padding: 0;
+  margin-left: .5em
+}
+.breadcrumb-trail li {
+  display: inline;
+}
+.breadcrumb-trail li:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  margin: 0 4px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid #ccc;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+/**
+ * Layout: Desktop
+ */
+@media only screen and (min-width: 800px) {
+  .wrapper {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+/**
+ * Layout: Mobile / Tablet
+ */
+@media only screen and (max-width: 799px) {
+  .wrapper {
+    margin: 0 1.5em 0 1.5em
+  }
+}
+
+
+/**
+ * Comments: Base
+ */
+.comment {
+  clear: both;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.comment > .comment {
+  background: #f7f7f7;
+  border-bottom: none;
+}
+.comment-author .avatar {
+  width: 40px;
+  height: 40px;
+  padding: 1px;
+  float: left;
+  margin: -1px 10px 0 0;
+}
+.comment > .comment .comment-author .avatar {
+  border-color: white;
+}
+.comment:target {
+  background: #ffc
+}
+.comment-author cite,
+.comment-author span {
+  font-style: normal;
+}
+.comment-meta {
+  font-size: 12px;
+}
+.comment-meta a {
+  color: #999;
+  text-decoration: none
+}
+#comment {
+  width: 100%;
+}
+#reply-title > a {
+  color: #454545;
+  text-decoration: none
+}
+
+
+
+/**
+ * Comments: Desktop
+ */
+@media only screen and (min-width: 800px) {
+  .comment {
+    padding: 15px 0 15px 70px;
+  }
+  .comment-author .avatar {
+    margin-left: -55px;
+  }
+}
+
+
+/**
+ * Comments: Mobile / Tablet
+ */
+@media only screen and (max-width: 799px) {
+  .comment > .comment {
+    padding: 15px;
+  }
+}
+
+
+
+/* -------------
+ * Plugin styles
+ * ------------- */
+
+.tu-list {
+  list-style: disc;
+}
+.tu-list li {
+  margin-bottom: 5px;
+}
+.tu-visited-1::before,
+.tu-answered-1::before {
+  content: ' \2713';
+  float: right;
+  margin-left: 5px;
+  color: #ccc;
+}
+.tu-schedule-0 {
+  opacity: .5
+}
+.tu-list-questions .tu-question-title {
+  display: none;
+}
+.tu-list-questions .tu-question-excerpt {
+  font-style: normal
+}
+.tu-failed-test,
+.tu-correct-0 {
+  color: #c33;
+}
+.tu-passed-test,
+.tu-correct-1 {
+  color: #393;
+}
+
+/**
+ * Main article: Mobile / Tablet
+ */
+@media only screen and (max-width: 799px) {
+  .tu-list {
+    padding-left: 0;
+  }
+}
+
+/**
+ * Main article table: Tablet / Desktop
+ */
+@media only screen and (min-width: 480px) {
+  .tu-list li > a {
+    display: inline-block;
+  }
+}
+
+/**
+ * Results table
+ */
+.tu-results-table td,
+.tu-results-table th {
+  padding: 5px;
+  text-align: left
+}
+.tu-results-avatar {
+  width: 32px
+}
+.tu-results-avatar img {
+  width: 32px;
+  height: 32px;
+  background: #f1f1f1;
+}
+
+/**
+ * Archived answers table
+ */
+.tu-archived-answers {
+  padding: 30px;
+  display: block;
+  margin: 30px 0 30px 0;
+  position: relative;
+  background: #f4f4f4;
+}
+.tu-archived-answers,
+.tu-archived-answers h1 {
+  font-family: monospace;
+}
+.tu-archived-answers::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 60px solid #e9e9e9;
+  border-right: 60px solid white;
+}
+.tu-archived-answers h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 20px;
+  font-weight: normal
+}
+.tu-archived-answer {
+  width: 100%;
+}
+.tu-archived-answer th {
+  text-align: left
+}
+.tu-archived-question th::after {
+  content: '.';
+}
+.tu-archived-answer:not(:last-child) {
+  margin-bottom: 20px;
+}
+.tu-answer-parts {
+  padding-left: 0;
+}
+
+/**
+ * Archived answers table: Desktop
+ */
+@media only screen and (min-width: 800px) {
+  .tu-archived-answers {
+    margin: 60px;
+  }
+  .tu-archived-answer th {
+   width: 25%;
+  }
+  .tu-archived-attempt th,
+  .tu-archived-correctness th {
+    visibility: hidden
+  }
+  .tu-archived-correctness span {
+    display: none
+  }
+  .tu-archived-correctness div {
+    font-size: 30px;
+    float: right;
+    margin-top: -2em;
+  }
+}
+
+/**
+ * Archived answers table: Mobile / Tablet
+ */
+
+@media only screen and (max-width: 799px) {
+  .tu-archived-answers th,
+  .tu-archived-answers td {
+    display: block;
+    margin-bottom: 10px
+  }
+  .tu-archived-correctness div {
+    display: none;
+  }
+}
+
+/**
+ * Test progress: Base
+ */
+.tu-test-progress {
+  float: right;
+  margin: 10px 0 10px 10px;
+  background: #f5f5f5;
+  display: inline-block;
+  width: 150px;
+  line-height: .7;
+}
+.tu-test-progress-bar {
+  display: inline-block;
+  text-indent: -10000em;
+  font-size: 12px;
+  padding: 5px 0 5px 0;
+  background: #e1e1e1;
+  cursor: default;
+}
+.tu-test-progress:hover .tu-test-progress-bar {
+  color: #888;
+  text-indent: 5px;
+}
+
+/**
+ * Pagination: Base
+ */
+.tu-pagination {
+  clear: both;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.tu-pagination a:not(:last-child) {
+  margin-right: 5px;
+}
+
+/**
+ * Tests: Base
+ */
+.tu-answers .tu-form-label {
+  display: none
+}
+
+/**
+ * Messages: Base
+ */
+.tu-message {
+  display: inline-block;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  padding: 5px 12px 5px 12px;
+  background: #f1f1f1;
+  margin-bottom: 15px;
+}
+.tu-message-success {
+  border: 1px solid #bdddbd;
+  background: #eaf4ea;
+}
+.tu-message-notice {
+  border: 1px solid #add2e4;
+  background: #e0eef5;
+}
+.tu-message-error {
+  border: 1px solid #e3b7b7;
+  background: #f6e8e8;
+}
+.tu-message-warning {
+  border: 1px solid #e4d4b6;
+  background: #f7f1e8;
+}
+
+/**
+ * Form elements: Base
+ */
+.form-validation {
+  color:#b00;
+}
+.tu-form-row {
+  margin-bottom: 1em;
+}
+label.tu-form-input {
+  cursor: pointer
+}
+.tu-form-label {
+  margin-bottom: .25em;
+}
+.tu-form-hint {
+  color: #bbb;
+}
+.tu-form-file {
+  margin-bottom: 10px;
+}
+.tu-form-text input:focus,
+.tu-form-text textarea:focus {
+  outline: none;
+}
+.tu-form-text input,
+.tu-form-select select,
+.tu-form-text textarea {
+  min-width: 200px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  padding: 5px 6px 5px 6px;
+  border-radius: 2px;
+
+  -webkit-box-shadow:inset 0 2px 3px rgba(0, 0, 0, .05);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, .05);
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tu-loading .tu-answers .tu-form-button::after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 -3px 5px;
+  background-image: url('../../img/@1x/loading.gif');
+}
+

@@ -1,0 +1,13 @@
+
+th.tu-question-remove {
+  width: 5%;
+}
+td.tu-question-remove {
+  text-align: right
+}
+.tu-questions-uneditable .tu-question td {
+  color: #999;
+}
+.postbox#options select {
+  max-width: 100%;
+}

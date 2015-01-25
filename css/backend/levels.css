@@ -1,0 +1,10 @@
+#edit-slug-box {
+  padding: 0 0 10px 0;
+}
+
+#group_access select,
+#trainee_eligibility select {
+  width: 100%;
+  min-height: 100px;
+}
+

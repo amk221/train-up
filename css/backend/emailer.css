@@ -1,0 +1,13 @@
+.tu-emailer {
+  width: 75%;
+}
+.tu-emailer .tu-recipients {
+  width: 100%;
+  min-height: 150px;
+}
+.tu-emailer .tu-remove-recipient {
+  float: right;
+}
+.tu-emailer .button-primary {
+  float: right;
+}

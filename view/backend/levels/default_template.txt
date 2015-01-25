@@ -1,0 +1,5 @@
+Welcome to the [level_title] training level.
+There are [number_of_level_resources] resources for you to study. [level_has_test]When you have perused the resources you can take [level_test_link text="the test"].[/level_has_test] [!level_has_test]This training level does not have a related test[/!level_has_test]
+
+[list_level_resources]
+

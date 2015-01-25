@@ -1,0 +1,18 @@
+Well done [trainee_first_name] for finishing the [result_test_title] test. Here are your results:
+
+<dl>
+  <dt>Mark:</dt>
+  <dd>[result_mark] out of [result_out_of]</dd>
+  <dt>Percentage:</dt>
+  <dd>[result_percentage]%</dd>
+  <dt>Overall grade:</dt>
+  <dd>[passed_test]<span class="tu-passed-test">[result_grade]</span>[/passed_test][!passed_test]<span class="tu-failed-test">[result_grade]</span>[/!passed_test]</dd>
+  <dt>Rank:</dt>
+  <dd>[result_rank]</dd>
+</dl>
+
+[!passed_test]
+  [can_resit_test]<p>You can [resit_test_link] this test</p>[/can_resit_test]
+[/!passed_test]
+
+[archived_answers]

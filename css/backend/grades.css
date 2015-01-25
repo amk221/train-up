@@ -1,0 +1,30 @@
+.tu-grades {
+  max-width: 640px;
+}
+th.tu-grade-percentage {
+  width: 20%;
+}
+th.tu-grade-description {
+  width: 75%;
+}
+.tu-grades input {
+  width: 100%;
+}
+th.tu-grade-remove {
+  width: 5%;
+}
+td.tu-grade-remove {
+  text-align: center;
+  padding-right: 0 !important;
+}
+table .tu-grades td,
+table .tu-grades th {
+  padding: 0 10px 5px 0;
+}
+.postbox .tu-grades td.tu-grade-remove a {
+  margin-right: -8px;
+}
+
+.tu-grades tfoot td {
+  text-align: right
+}

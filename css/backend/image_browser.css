@@ -1,0 +1,15 @@
+.tu-image-browser.tu-has-image {
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  padding: 10px 15px 10px 10px;  
+  position: relative;
+  display: inline-block;
+}
+.tu-image-browser.tu-has-image .tu-image-browse {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.tu-image-browser.tu-has-image img {
+  margin-left: 85px;
+}

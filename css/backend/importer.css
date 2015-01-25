@@ -1,0 +1,27 @@
+.tu-importer {
+
+}
+#tu-import-file:focus {
+  outline: none;
+  -webkit-appearance: none;
+}
+.tu-importer-supports {
+  margin: 20px 0 30px 0;
+  border: 1px dashed #e1e1e1;
+  padding: 15px;
+}
+.tu-import-progress-bar {
+  width: 100%;
+  margin-top: 8px;
+}
+.tu-importer-supports p {
+  font-size: 80%;
+  margin: 0 0 4px 0
+}
+.tu-importer-supports ul {
+  font-size: 80%;
+  margin: 0;
+}
+.tu-importer-supports li {
+  margin-bottom: 0;
+}

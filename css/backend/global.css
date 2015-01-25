@@ -1,0 +1,26 @@
+#icon-tu_plugin, #icon-users {
+  background-image: url('../../img/@2x/icon_64.png') !important;
+  background-size: 32px 32px !important;
+  background-position: 0 0 !important;
+}
+
+.toplevel_page_tu_plugin img {
+  width: 50%;
+}
+
+.tu-latest-activity {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tu-latest-activity td,
+.tu-latest-activity th {
+  padding: 2px
+}
+.tu-latest-activity th {
+  text-align: left
+}
+.tu-latest-activity .tu-avatar img {
+  width: 16px;
+  height: 16px;
+  margin: 0 0 -3px 1px;
+}
