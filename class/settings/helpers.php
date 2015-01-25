@@ -91,12 +91,6 @@ class Settings {
       'general' => array(
         'title'    => __('General', 'trainup'),
         'settings' => array(
-          'auto_update' => array(
-            'type'        => 'checkbox',
-            'title'       => __('Keep up to date', 'trainup'),
-            'description' => __('Enabled', 'trainup'),
-            'default'     => true
-          ),
           'title' => array(
             'type'       => 'text_input',
             'validation' => array('required'),
