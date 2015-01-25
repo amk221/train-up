@@ -8,22 +8,22 @@ For those who purchased Train-Up! in the last 12 months you can still get suppor
 
 The documentation is currently more of an overview of features. Help providing better docs would be greatly appreciated.
 
-* [Levels](levels.md)
-* [Resources](resources.md)
-* [Tests](tests.md)
-* [Questions](questions.md)
-* [Groups](groups.md)
-* [Trainees](trainees.md)
-* [Group managers](group_managers.md)
-* [Pages](pages.md)
-* [Results](results.md)
-* [Archive](archive.md)
-* [Bulk emailer](bulk_emailer.md)
-* [Theme](theme.md)
-* [Settings](settings.md)
-* [Tin Can API](tin_can.md)
-* [Actions & Filters](actions_and_filters.md)
-* [Tips](tips.md)
+* [Levels](docs/levels.md)
+* [Resources](docs/resources.md)
+* [Tests](docs/tests.md)
+* [Questions](docs/questions.md)
+* [Groups](docs/groups.md)
+* [Trainees](docs/trainees.md)
+* [Group managers](docs/group_managers.md)
+* [Pages](docs/pages.md)
+* [Results](docs/results.md)
+* [Archive](docs/archive.md)
+* [Bulk emailer](docs/bulk_emailer.md)
+* [Theme](docs/theme.md)
+* [Settings](docs/settings.md)
+* [Tin Can API](docs/tin_can.md)
+* [Actions & Filters](docs/actions_and_filters.md)
+* [Tips](docs/tips.md)
 
 ##### Add-ons
 
