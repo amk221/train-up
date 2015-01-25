@@ -16,4 +16,4 @@ As a Group manager of Groups A, B and C you have the ability to view both Joe's 
 
 ##### Roles and capabilities
 
-If you are looking for more granular control over what Group managers can do, there are [filters](filters.md) available so you can customise their capabilities manually. Or, we recommend using the [Members plugin](http://wordpress.org/plugins/members/).
+If you are looking for more granular control over what Group managers can do, there are [filters](actions_and_filters.md) available so you can customise their capabilities manually. Or, we recommend using the [Members plugin](http://wordpress.org/plugins/members/).
