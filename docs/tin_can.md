@@ -7,7 +7,7 @@ To be clear – as a WordPress Plugin, Train-Up! does not require a third party 
 
 However, if you wish you can enable tracking of certain events within Train-Up! For example: When a [Trainee](trainees.md) completes a [Test](tests.md) a Tin Can API Statement can be generated and sent to your LRS of choice.
 
-	Please note that the Tin Can API functionality within Train-Up! is a work in progress and requires more feedback from the community.
+_Please note that the Tin Can API functionality within Train-Up! is a work in progress and requires more feedback from the community._
 
 ##### Settings screen
 
