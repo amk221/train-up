@@ -16,7 +16,7 @@ For example:
 
 	[!known_user]
 		Hiya
-	[/known_user]
+	[/!known_user]
 
 ##### Video
 
