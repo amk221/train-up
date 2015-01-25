@@ -4,6 +4,21 @@ Train-Up! was for a short time a premium WordPress plugin. As of Febuary 2015 it
 
 For those who purchased Train-Up! in the last 12 months you can still get support by emailing wptrainup at wptrainup dot co dot uk and providing your licence number.
 
+#### Overview
+
+The plugin was originally designed to make it easy for businesses to train their staff e.g. passing basic fire-safety test.
+
+_Simple example scenario:_
+
+1. Sign up to employer's training website
+2. Select a level (e.g. fire safety part 1)
+3. Read training resources for that level
+4. Take a test on material studied
+5. Take one or more resits if necessary
+6. View results and communicate with manager for feedback
+
+In terms of features it is similar to [Sensei](http://www.woothemes.com/products/sensei/), [LearnDash](http://www.learndash.com/), [Lifter](https://lifterlms.com/) and [WP Courseware](https://flyplugins.com/wp-courseware/). However, selling your courses is not and never will be a goal of the project. (But, because in Train-Up! everything is 'just a page' you _can_ quite easily still acheive this using existing third party e-commerce plugins).
+
 #### Documentation
 
 The documentation is currently more of an overview of features. Help providing better docs would be greatly appreciated.
