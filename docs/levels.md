@@ -20,6 +20,6 @@ Training Levels have special ties with [Resources](resources.md), [Test](tests.m
 
 <img src="img/level_wysiwyg.png" width="611" height="378">
 
-##### Demo
+##### Video
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/zeO-8cJs_lU?HD=1;rel=0;showinfo=0&#038;vq=hd720" frameborder="0" allowfullscreen></iframe>
+<a href="http://youtube.com/watch?v=zeO-8cJs_lU" target="_blank"><img src="http://img.youtube.com/vi/zeO-8cJs_lU/0.jpg"></a>

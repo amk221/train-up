@@ -17,7 +17,7 @@ For example:
 	[!known_user]
 		Hiya
 	[/known_user]
-	
-##### Demo
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/1GceTNNCHMk?HD=1;rel=0;showinfo=0&#038;vq=hd720" frameborder="0" allowfullscreen></iframe>
+##### Video
+
+<a href="http://youtube.com/watch?v=1GceTNNCHMk" target="_blank"><img src="http://img.youtube.com/vi/1GceTNNCHMk/0.jpg"></a>

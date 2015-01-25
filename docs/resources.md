@@ -24,6 +24,6 @@ Using the `[list_level_resources]` shortcode adds a class to each list item to a
 	$trainee = Trainees::factory('joe@bloggs.com');
 	echo $trainee->has_visited_resource(37);
 
-##### Demo
+##### Video
 
-<iframe src="http://www.youtube.com/embed/7-bAEa4NhUk?HD=1;rel=0;showinfo=0&amp;vq=hd720" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
+<a href="http://youtube.com/watch?v=7-bAEa4NhUk" target="_blank"><img src="http://img.youtube.com/vi/7-bAEa4NhUk/0.jpg"></a>
