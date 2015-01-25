@@ -19,7 +19,18 @@ class Upgrade_helper {
    *
    * @access private
    */
-  private $api;
+  private $api = 'https://raw.githubusercontent.com/amk221/train-up/master/';
+
+  /**
+   * $download_url
+   *
+   * The URL that provides a zip containing the latest version
+   *
+   * @var string
+   *
+   * @access private
+   */
+  private $download_url = 'https://github.com/amk221/train-up/archive/master.zip';
 
   /**
    * $latest_version
@@ -33,15 +44,15 @@ class Upgrade_helper {
   private $latest_version = null;
 
   /**
-   * $latest_info
+   * $latest_changes
    *
-   * Cached information about the latest version
+   * Cached information about the latest changes to Train-Up!
    *
    * @var object
    *
    * @access private
    */
-  private $latest_info = null;
+  private $latest_changes = null;
 
   /**
    * __construct
@@ -55,12 +66,7 @@ class Upgrade_helper {
    * @access public
    */
   public function __construct() {
-    # set_site_transient('update_plugins', '');
-
-    # TODO, change from old API to github
-    return;
-
-    $this->api = tu()->get_homepage() . '/api';
+    set_site_transient('update_plugins', '');
 
     add_filter('pre_set_site_transient_update_plugins', array($this, '_check'));
     add_filter('plugins_api', array($this, '_info'), 10, 3);
@@ -69,21 +75,16 @@ class Upgrade_helper {
   /**
    * api_url
    *
-   * Generate a URL that points to a single action endpoint on our API
-   * Each API request required a valid license number to be passed in.
+   * Generate a URL that points to a file on github.
    *
-   * @param string $action
+   * @param string $path
    *
    * @access private
    *
    * @return string URL
    */
-  private function api_url($action) {
-    $license_number = tu()->config['general']['license_number'];
-    $license_number = empty($license_number) ? '0' : $license_number;
-    $args           = compact('license_number', 'action');
-
-    return add_query_arg($args, $this->api);
+  private function api_url($path) {
+    return $this->api . $path;
   }
 
   /**
@@ -108,7 +109,7 @@ class Upgrade_helper {
       'slug'        => tu()->get_slug(),
       'url'         => tu()->get_homepage(),
       'new_version' => $this->get_latest_version(),
-      'package'     => $this->api_url('latest_download')
+      'package'     => $this->download_url
     );
 
     return $transient;
@@ -130,41 +131,47 @@ class Upgrade_helper {
    */
   public function _info($false, $action, $args) {
     if ($args->slug === tu()->get_slug()) {
-      return $this->get_latest_info();
+      return (object)array(
+        'name'          => tu()->get_name(),
+        'download_link' => $this->download_url,
+        'slug'          => tu()->get_slug(),
+        'new_version'   => $this->get_latest_version(),
+        'requires'      => '3.5.1',
+        'sections'      => array(
+          'description' => $this->get_latest_changes()
+        )
+      );
     }
     return false;
   }
 
   /**
-   * get_latest_info
+   * get_latest_changes
    *
-   * - Get the latest information from the API, and cache it internally so we
-   *   only have to make the request once.
-   * - WordPress requires that the `sections` are an array, but this information
-   *   is lost in the json_encode process, so cast it back.
+   * Get the changes from the master changelog on github. Memoise it.
    *
    * @access public
    *
    * @return object Information about the latest available version
    */
-  public function get_latest_info() {
-    if (is_null($this->latest_info)) {
-      $response = wp_remote_get($this->api_url('latest_info'), array(
-        'timeout'=> 60
-      ));
+  public function get_latest_changes() {
+    if (is_null($this->latest_changes)) {
+      $response  = wp_remote_get($this->api_url('CHANGELOG.md'));
+      $body      = wp_remote_retrieve_body($response);
+      $delimiter = '/\d{4}-\d{2}-\d{2} - version \d+\.\d+\.\d+/';
+      $chunks    = preg_split($delimiter, $body, null, PREG_SPLIT_NO_EMPTY);
 
-      $this->latest_info = json_decode($response['body']);
-      $this->latest_info->sections = (array)$this->latest_info->sections;
+      $this->latest_changes = isset($chunks[0]) ? $chunks[0] : null;
     }
 
-    return $this->latest_info;
+    return $this->latest_changes;
   }
 
   /**
    * get_latest_version
    *
-   * Get the latest version from the API, and cache it internally so we only
-   * have to make the request once.
+   * Determine the latest version by checking on github what is in master.
+   * Memoise the value.
    *
    * @access public
    *
@@ -172,9 +179,12 @@ class Upgrade_helper {
    */
   public function get_latest_version() {
     if (is_null($this->latest_version)) {
-      $response = wp_remote_get($this->api_url('latest_version'));
+      $response = wp_remote_get($this->api_url('index.php'));
       $body     = wp_remote_retrieve_body($response);
-      $this->latest_version = json_decode($body);
+
+      preg_match('/Version: (\d+\.\d+\.\d+)/', $body, $matches);
+
+      $this->latest_version = isset($matches[1]) ? $matches[1] : null;
     }
 
     return $this->latest_version;
