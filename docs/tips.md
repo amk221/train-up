@@ -2,6 +2,7 @@ Tips
 ====
 
 * [WordPress Multisite](#wordpress-multisite)
+* [Add post_title to Questions](#add-post_title-to-questions)
 * [Automatically jump to the next Question](#automatically-jump-to-the-next-question)
 * [Add explanatory text if Trainees get a Question wrong](#add-explanatory-text-if-trainees-get-a-question-wrong)
 * [Enable comments on Resource pages](#enable-comments-on-resource-pages)
