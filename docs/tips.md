@@ -13,6 +13,17 @@ Train-Up! works in a multi-site environment so you can have multiple instances o
 
 To install, you must activate the plugin on each individual site, rather than choosing the Network Install option. This is because Train-Up! creates an archive database table to store Trainee's test results and this needs to exist for each site.
 
+##### Add post_title to Questions
+
+Post titles aren't really relevant for questions, but you can add them like so:
+
+	add_filter('tu_question_options', function($options) {
+	  array_push($options['supports'], 'title');
+	  return $options;
+	});
+
+Because Questions are a dynamic custom post type, the cache must be cleared for your filter to take affect. To do this, Go to Train-Up! > Settings and press Save Changes.
+
 ##### Automatically jump to next Question
 When a Trainee saves their answer to a Question, you may wish to automatically move them on to the next Question. This is very easy to achieve but it does not come as a standard setting simply because other factors affect its success, such as: If the answer being saved via Ajax, and the button text you are using etc.
 

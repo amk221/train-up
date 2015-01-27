@@ -285,6 +285,9 @@ class Question extends Post {
   /**
    * get_title
    *
+   * Infer the Question's title from its post_content. unless a custom title
+   * has been specified.
+   *
    * @param mixed $strip_tags Optionally strip tags from the post_content
    * @param int   $limit      Optionally limit and append ellipsis
    *
@@ -293,7 +296,8 @@ class Question extends Post {
    * @return mixed Value.
    */
   public function get_title($strip_tags = true, $limit = 0) {
-    $title = strip_shortcodes($this->post_content);
+    $title = $this->has_custom_title() ? $this->post_title : $this->post_content;
+    $title = strip_shortcodes($title);
 
     $title = apply_filters('tu_question_title', $title, $this);
     $title = apply_filters("tu_question_title_{$this->type}", $title, $this);
@@ -497,6 +501,24 @@ class Question extends Post {
   }
 
   /**
+   * has_custom_title
+   *
+   * A Question's title is inferred from its post_content.
+   *
+   * However, if the user has enabled 'title' support on the Question Post Type
+   * and they appear to have entered a title other than the default, then assume
+   * the post has a custom title.
+   *
+   * @return boolean
+   */
+  public function has_custom_title() {
+    return (
+      post_type_supports($this->post_type, 'title') &&
+      $this->post_title != sprintf(__('Question %1$s', 'trainup'), $this->menu_order)
+    );
+  }
+
+  /**
    * auto_title_and_order
    *
    * - Fired when this Question is saved
@@ -510,12 +532,14 @@ class Question extends Post {
 
     foreach ($this->test->questions as $i => $question) {
       $i++;
-      $title = sprintf(__('Question %1$s', 'trainup'), $i);
-      $data = array(
-        'post_title' => $title,
-        'post_name'  => sanitize_title($title),
-        'menu_order' => $i
-      );
+
+      $data = array('menu_order' => $i);
+
+      if (!$this->has_custom_title()) {
+        $data['post_title'] = sprintf(__('Question %1$s', 'trainup'), $i);
+        $data['post_name']  = sanitize_title($data['post_title']);
+      }
+
       $wpdb->update($wpdb->posts, $data, array('ID' => $question->ID));
     }
   }
