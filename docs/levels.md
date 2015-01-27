@@ -3,7 +3,7 @@ Levels
 
 Levels are a custom post type which are the entry point for [Trainees](trainees.md) to a collection of [Resources](resources.md) and the optional [Test](tests.md).
 
-Because levels are just a page, you can utilize WordPress' menu_	order property and nesting to create e-learning courses with a hierarchy of your choice. For example:
+Because levels are just a page, you can utilize WordPress' `menu_order` property and nesting to create e-learning courses with a hierarchy of your choice. For example:
 
 * Geography (Level 1)
   * Volcanoes (Level 1.1)
