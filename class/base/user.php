@@ -137,6 +137,12 @@ class User {
 
     $new_data = $this->get_data();
 
+    // Only save the user's password if it has been defined in the $data array
+    // i.e. don't save it on *every* call to `save()`
+    if (!isset($data['user_pass'])) {
+      unset($new_data['user_pass']);
+    }
+
     if ($this->ID) {
       wp_update_user($new_data);
     } else {
