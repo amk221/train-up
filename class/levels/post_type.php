@@ -39,7 +39,7 @@ class Level_post_type extends Post_type {
    *
    * Set the options on this Level post type, so that it can be serialised.
    * These are the settings passed to WordPress' `register_post_type`
-   * 
+   *
    * @access protected
    */
   protected function set_options() {
@@ -84,7 +84,7 @@ class Level_post_type extends Post_type {
    * set_shortcodes
    *
    * Set the shortcodes on this Level post type, so that it can be serialised.
-   * 
+   *
    * @access protected
    */
   protected function set_shortcodes() {
@@ -152,6 +152,12 @@ class Level_post_type extends Post_type {
           'limit'   => 10,
           'columns' => 'avatar, rank, user_name'
         )
+      ),
+      'resume_resources_link' => array(
+        'shortcode' => sprintf(__('resume_%1$s_link', 'trainup'), $_resources),
+        'attributes' => array(
+          'text' => sprintf(__('Resume %1$s', 'trainup'), $_resources)
+        )
       )
     );
   }
@@ -161,7 +167,7 @@ class Level_post_type extends Post_type {
    *
    * - Callback for the 'number_of_level_resources' shortcode
    * - Return the number of Resources associated with the active level
-   * 
+   *
    * @access protected
    *
    * @return integer The number of resources the active level has.
@@ -172,7 +178,7 @@ class Level_post_type extends Post_type {
 
   /**
    * shortcode_number_sub_levels
-   * 
+   *
    * @access protected
    *
    * @return integer The number of children the active level has.
@@ -187,7 +193,7 @@ class Level_post_type extends Post_type {
    * - Callback for the 'list_level_resources' shortcode
    * - Returns a HTML list of Resources associated with the active level,
    *   or optionally a specific level.
-   * 
+   *
    * @access protected
    *
    * @return string An ordered list of resources.
@@ -217,8 +223,8 @@ class Level_post_type extends Post_type {
    * - Callback for the 'level_has_resources' shortcode
    * - Output the content wrapped by this shortcode if the active level
    *   does have some associated resources.
-   * 
-   * @param array $attributes 
+   *
+   * @param array $attributes
    * @param string $content
    *
    * @access protected
@@ -237,8 +243,8 @@ class Level_post_type extends Post_type {
    * - Callback for the '!level_has_resources' shortcode
    * - Output the content wrapped by this shortcode if the active level
    *   does not have any associated resources.
-   * 
-   * @param array $attributes 
+   *
+   * @param array $attributes
    * @param string $content
    *
    * @access protected
@@ -253,7 +259,7 @@ class Level_post_type extends Post_type {
 
   /**
    * shortcode_level_title
-   * 
+   *
    * @access protected
    *
    * @return string The title of the active level.
@@ -268,8 +274,8 @@ class Level_post_type extends Post_type {
    * - Callback for the 'level_has_test' shortcode
    * - Output the content wrapped by this shortcode if the active level
    *   does have an associated Test.
-   * 
-   * @param array $attributes 
+   *
+   * @param array $attributes
    * @param string $content
    *
    * @access protected
@@ -288,7 +294,7 @@ class Level_post_type extends Post_type {
    * - Callback for the '!level_has_test' shortcode
    * - Output the content wrapped by this shortcode if the active level
    *   does not have an associated Test.
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -308,9 +314,9 @@ class Level_post_type extends Post_type {
    * - Callback for the 'level_test_link' shortcode
    * - Output a hyperlink to the active Level's Test.
    * - Optionally accept an attribute to allow the user to change the link text.
-   * 
+   *
    * @param array $attributes
-   * @param string $content 
+   * @param string $content
    *
    * @access protected
    *
@@ -326,7 +332,7 @@ class Level_post_type extends Post_type {
 
   /**
    * shortcode_list_sub_levels
-   * 
+   *
    * @access public
    *
    * @return string
@@ -349,7 +355,7 @@ class Level_post_type extends Post_type {
    * - Callback for the 'has_sub_levels' shortcode
    * - Output the content wrapped by this shortcode if the active level
    *   has children.
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -369,7 +375,7 @@ class Level_post_type extends Post_type {
    * - Callback for the '!has_sub_levels' shortcode
    * - Output the content wrapped by this shortcode if the active level
    *   doesn't have any children.
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -390,7 +396,7 @@ class Level_post_type extends Post_type {
    * - Outputs a table of test result data for the active level's test.
    * - Order by percentage by default, because that allows us to show the `rank`
    *   column.
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -413,7 +419,37 @@ class Level_post_type extends Post_type {
     }
   }
 
+  /**
+   * shortcode_resume_resources_link
+   *
+   * - Callback for the 'resume_resources_link' shortcode
+   * - Outputs a hyperlink to the next unvisited resource in the level.
+   *
+   * @param array $attributes
+   * @param string $content
+   *
+   * @access protected
+   *
+   * @return string
+   */
+  protected function shortcode_resume_resources_link($attributes, $content) {
+    $resources = tu()->level->resources;
+    $next      = null;
+
+    foreach ($resources as $resource) {
+      if (!tu()->user->has_visited_resource($resource->ID)) {
+        $next = $resource;
+        break;
+      }
+    }
+
+    $href = $next ? $next->url : ($resources ? $resources[0]->url : '#');
+    $text = $attributes['text'];
+
+    return "<a href='{$href}' class='tu-resume-resources-link'>{$text}</a>";
+  }
+
 }
 
 
- 
+

@@ -45,7 +45,7 @@ class View {
 
   /**
    * __construct
-   * 
+   *
    * Include the specified file, and expand the hash of view data so the
    * view can be rendered, capture this string using an output buffer.
    *
@@ -67,7 +67,7 @@ class View {
 
   /**
    * __toString
-   * 
+   *
    * @access public
    *
    * @return string The rendered view

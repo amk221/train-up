@@ -10,7 +10,7 @@
 namespace TU;
 
 class Test_post_type extends Post_type {
-  
+
   /**
    * $slug
    *
@@ -39,7 +39,7 @@ class Test_post_type extends Post_type {
    *
    * Set the options on this Test post type, so that it can be serialised.
    * These are the settings passed to WordPress' `register_post_type`
-   * 
+   *
    * @access protected
    */
   protected function set_options() {
@@ -80,13 +80,13 @@ class Test_post_type extends Post_type {
    * set_shortcodes
    *
    * Set the shortcodes on this Test post type, so that it can be serialised.
-   * 
+   *
    * @access protected
    */
   protected function set_shortcodes() {
-    $_trainee = simplify(tu()->config['trainees']['single']);
-    $_test    = simplify(tu()->config['tests']['single']);
-    $_level   = simplify(tu()->config['levels']['single']);
+    $_trainee  = simplify(tu()->config['trainees']['single']);
+    $_test     = simplify(tu()->config['tests']['single']);
+    $_level    = simplify(tu()->config['levels']['single']);
 
     $this->shortcodes = array(
       'test_level_title' => array(
@@ -155,13 +155,19 @@ class Test_post_type extends Post_type {
           'limit'   => 10,
           'columns' => 'avatar, rank, user_name'
         )
+      ),
+      'resume_questions_link' => array(
+        'shortcode' => sprintf(__('resume_questions_link', 'trainup')),
+        'attributes' => array(
+          'text' => __('Resume questions', 'trainup')
+        )
       )
     );
   }
 
   /**
    * shortcode_number_of_test_questions
-   * 
+   *
    * @access protected
    *
    * @return integer The number of questions that the active test has
@@ -178,7 +184,7 @@ class Test_post_type extends Post_type {
    *   in trainee.
    * - Optionally allow the link text to be set via the `text` attribute
    * - redirect_to attribute was added later, hence the isset check.
-   * 
+   *
    * @param array $attributes
    *
    * @access protected
@@ -187,7 +193,7 @@ class Test_post_type extends Post_type {
    */
   protected function shortcode_start_test_link($attributes) {
     $args = array('tu_action' => 'start');
-    
+
     if (!empty($attributes['redirect_to'])) {
       $args['tu_redirect'] = $attributes['redirect_to'];
     }
@@ -203,11 +209,11 @@ class Test_post_type extends Post_type {
    *
    * - Callback for the 'finish_test_link' shortcode
    * - Output a hyperlink that finishes the active test for the currently logged
-   *   in trainee. This will create a Result post for them, and append the 
+   *   in trainee. This will create a Result post for them, and append the
    *   result data to the user's archive.
    * - Optionally allow the link text to be set via the `text` attribute
    * - redirect_to attribute was added later, hense the isset check.
-   * 
+   *
    * @param array $attributes
    *
    * @access protected
@@ -216,7 +222,7 @@ class Test_post_type extends Post_type {
    */
   protected function shortcode_finish_test_link($attributes) {
     $args = array('tu_action' => 'finish');
-    
+
     if (!empty($attributes['redirect_to'])) {
       $args['tu_redirect'] = $attributes['redirect_to'];
     }
@@ -234,7 +240,7 @@ class Test_post_type extends Post_type {
    * - Output the title of the Level that this Test belongs to.
    *   (at the moment, all Tests have the same title as their corresponding
    *   Level anyway).
-   * 
+   *
    * @access protected
    *
    * @return string
@@ -245,7 +251,7 @@ class Test_post_type extends Post_type {
 
   /**
    * shortcode_trainee_started_test
-   * 
+   *
    * - Callback for the 'trainee_started_test' shortcode
    * - Output the content wrapped by this shortcode if the active test has
    *   been started by the currently logged in user
@@ -272,7 +278,7 @@ class Test_post_type extends Post_type {
    * - Note: A test is considered started if it has been started or finished
    *   in this context, really what we are saying is has the user 'taken' the
    *   test.
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -295,7 +301,7 @@ class Test_post_type extends Post_type {
    * - Callback for the 'trainee_finished_test' shortcode
    * - Output the content wrapped by this shortcode if the active test has
    *   been completed by the currently logged in user
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -315,7 +321,7 @@ class Test_post_type extends Post_type {
    * - Callback for the '!trainee_finished_test' shortcode
    * - Output the content wrapped by this shortcode if the active test has
    *   *not* been completed by the currently logged in user
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -335,7 +341,7 @@ class Test_post_type extends Post_type {
    * - Callback for the 'trainee_submitted_answers' shortcode
    * - Output the content wrapped by this shortcode if the currently logged in
    *   trainee has just submitted their answers to the active test.
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -355,7 +361,7 @@ class Test_post_type extends Post_type {
    * - Callback for the '!trainee_submitted_answers' shortcode
    * - Output the content wrapped by this shortcode if the currently logged in
    *   trainee has not just submitted their answers to the active test.
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -371,7 +377,7 @@ class Test_post_type extends Post_type {
 
   /**
    * shortcode_list_test_questions
-   * 
+   *
    * @access protected
    *
    * @return string An ordered list of the questions that belong to the active
@@ -392,7 +398,7 @@ class Test_post_type extends Post_type {
 
   /**
    * shortcode_test_time_remaining
-   * 
+   *
    * @access protected
    *
    * @return string
@@ -411,7 +417,7 @@ class Test_post_type extends Post_type {
 
   /**
    * shortcode_test_percent_complete
-   * 
+   *
    * @access protected
    *
    * @return integer
@@ -426,7 +432,7 @@ class Test_post_type extends Post_type {
    * - Callback for the 'test_results_table' shortcode
    * - Outputs a table of result data for the active test
    * - Order by percentage by default, because that allows us to show the `rank` col.
-   * 
+   *
    * @param array $attributes
    * @param string $content
    *
@@ -447,7 +453,37 @@ class Test_post_type extends Post_type {
     ));
   }
 
+  /**
+   * shortcode_resume_questions_link
+   *
+   * - Callback for the 'resume_questions_link' shortcode
+   * - Outputs a hyperlink to the next unanswered question in the test.
+   *
+   * @param array $attributes
+   * @param string $content
+   *
+   * @access protected
+   *
+   * @return string
+   */
+  protected function shortcode_resume_questions_link($attributes, $content) {
+    $questions = tu()->test->questions;
+    $next      = null;
+
+    foreach ($questions as $question) {
+      if (!tu()->user->has_answered_question($question)) {
+        $next = $question;
+        break;
+      }
+    }
+
+    $href = $next ? $next->url : ($questions ? $questions[0]->url : '#');
+    $text = $attributes['text'];
+
+    return "<a href='{$href}' class='tu-resume-questions-link'>{$text}</a>";
+  }
+
 }
 
 
- 
+
