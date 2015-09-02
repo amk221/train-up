@@ -39,7 +39,7 @@ class Groups {
     $args = array_merge(array(
       'numberposts' => -1,
       'post_type'   => 'tu_group',
-      'orderby'     => 'ID menu_order post_title',
+      'orderby'     => 'menu_order post_title ID',
       'order'       => 'ASC'
     ), $args);
 
@@ -173,7 +173,7 @@ class Groups {
       's'              => $search_str,
       'post_type'      => 'tu_group',
       'posts_per_page' => 5,
-      'orderby'        => 'ID menu_order post_title',
+      'orderby'        => 'menu_order post_title ID',
       'order'          => 'ASC'
     ));
 

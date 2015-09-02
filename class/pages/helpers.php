@@ -50,7 +50,7 @@ class Pages {
     $args = array_merge(array(
       'numberposts' => -1,
       'post_type'   => 'tu_page',
-      'orderby'     => 'ID menu_order post_title',
+      'orderby'     => 'menu_order post_title ID',
       'order'       => 'ASC'
     ), $args);
 
