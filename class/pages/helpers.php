@@ -19,7 +19,7 @@ class Pages {
    *   of the Class that the page is associated with, and so in that case we
    *   return an instance of *that* type, rather than the generic page class.
    * - e.g. Pages::factory('Login') returns a new Login_page instance
-   * 
+   *
    * @param array|object $page
    * @param boolean $active Spoof whether or not the page is active
    *
@@ -38,8 +38,8 @@ class Pages {
 
   /**
    * find_all
-   * 
-   * @param array $args 
+   *
+   * @param array $args
    *
    * @access public
    * @static
@@ -50,10 +50,10 @@ class Pages {
     $args = array_merge(array(
       'numberposts' => -1,
       'post_type'   => 'tu_page',
-      'orderby'     => 'post_title',
+      'orderby'     => 'menu_order post_title',
       'order'       => 'ASC'
     ), $args);
-    
+
     return get_posts_as('Pages', $args);
   }
 

@@ -12,7 +12,7 @@ namespace TU;
  * find_post_by_title
  *
  * Like WordPress' get_page_by_title, but not for a specific post type.
- * 
+ *
  * @param object $title Title of the first post to find
  *
  * @access public
@@ -38,7 +38,7 @@ function find_post_by_title($title) {
  *
  * Accept a WP_Post and return a Train-Up! post as an instance of its post_type.
  * Or, if it has a class specified then use that instead.
- * 
+ *
  * @param object $post The post to be re-instantiated.
  * @param boolean $active Whether or not the post should be active
  *
@@ -49,7 +49,7 @@ function find_post_by_title($title) {
 function get_post_instance($post, $active = false) {
   if (is_numeric($post)) $post = get_post($post);
   if (!$post) return;
-  
+
   preg_match('/^tu_([a-zA-Z]+)_?/i', $post->post_type, $matches);
 
   if (count($matches) !== 2) return;
@@ -58,7 +58,7 @@ function get_post_instance($post, $active = false) {
   $class_name  = get_post_meta($post->ID, 'tu_class', true);
   $class_name  = $class_name ?: __NAMESPACE__.'\\'.ucfirst($type);
   $instance    = new $class_name($post, $active);
-  
+
   return array($instance, $type);
 }
 
@@ -66,7 +66,7 @@ function get_post_instance($post, $active = false) {
  * get_user_instance
  *
  * Accept a WP_User and return a Train-Up! user as an instance of its role.
- * 
+ *
  * @param object $user
  *
  * @access public
@@ -98,7 +98,7 @@ function get_user_instance($user) {
  * - Set up a global post object on the TU singleton that is an instance of the
  *   correct class, depending on the post_type.
  * - Unlike tu()->user, tu()->post might not always be present.
- * 
+ *
  * @param int|object $post
  *
  * @access public
@@ -119,7 +119,7 @@ function register_global_post($post) {
  *   correct class, depending on the role of the user.
  * - Unlike tu()->post, tu()->user will always be available, to represent
  *   a guest.
- * 
+ *
  * @param object $user
  *
  * @access public
@@ -136,8 +136,8 @@ function register_global_user($user) {
  *
  * Callback that accepts a bunch of objects and 'converts' them all to a
  * particular instance of a class. The factory method for that class must exist.
- * 
- * @param string $class_name 
+ *
+ * @param string $class_name
  * @param array $objects
  *
  * @access public
@@ -154,18 +154,10 @@ function get_as($class_name, $objects) {
  * get_posts_as
  *
  * - Call WordPress' get_posts function
- * - `nesting` is a made up argument to turn on putting children beneath their
- *   parents. This is a fix, because WP's get_pages does this, but its get_posts
- *   doesn't. It is on by default, because most of the time we want things to 
- *   appear in order and sit underneath their parents. However, it is useful
- *   to disable if you are 'searching' using get_posts, because of the way
- *   `get_page_children` works (which is not always the desired way).
- *   Remember: it only works on the given set, but if you are searching you
- *   want to search all posts, not the set you've just searched!
  * - Temporarily add a pre post filter to allow limiting of the results to
  *   particular Group Manager.
- * 
- * @param string $class_name 
+ *
+ * @param string $class_name
  * @param array $args
  *
  * @access public
@@ -179,11 +171,8 @@ function get_posts_as($class_name, $args) {
 
   add_filter('pre_get_posts', $filter);
 
-  $posts     = get_posts($args);
-  $parent_id = isset($args['post_parent']) ? $args['post_parent'] : null;
-  $nesting   = isset($args['nesting']) ? (bool)$args['nesting'] : true;
-  $posts     = $nesting ? get_page_children($parent_id, $posts) : $posts;
-  $posts     = get_as($class_name, $posts);
+  $posts = get_posts($args);
+  $posts = get_as($class_name, $posts);
 
   remove_filter('pre_get_posts', $filter);
 
@@ -197,9 +186,9 @@ function get_posts_as($class_name, $args) {
  *   type of user being requested.
  * - Also like with get_posts_as, temporarily add a filter to allow limiting
  *   of access to users (i.e. For Group managers)
- * 
- * @param string $class_name 
- * @param array $args 
+ *
+ * @param string $class_name
+ * @param array $args
  *
  * @access public
  *
@@ -221,7 +210,7 @@ function get_users_as($class_name, $args) {
 
 /**
  * get_known_post_type_names
- * 
+ *
  * @access public
  *
  * @return array The names of the core post types that the plugin uses
@@ -246,7 +235,7 @@ function get_known_post_type_names() {
  *   The reason for this is to make SQL queries return no results using
  *   `AND IN (0)`, because `AND IN ()` would fail.
  * - `array_values` is used just to reindex the array
- * 
+ *
  * @param mixed $ids IDs you want.
  * @param mixed $set IDs to search.
  *
@@ -273,7 +262,7 @@ function filter_ids($ids = array(), $set = array()) {
  *
  * Similar to `sanitize_title_with_dashes`, but with underscores instead
  * of dashes.
- * 
+ *
  * @param string $text
  *
  * @access public
@@ -291,7 +280,7 @@ function simplify($text) {
  * go_to
  *
  * Drop everything and go to the specified URL.
- * 
+ *
  * @param mixed $url
  *
  * @access public
@@ -306,7 +295,7 @@ function go_to($url) {
  *
  * Generate a URL that will show the login screen, but on logging in will
  * redirect to the given URL.
- * 
+ *
  * @param string $return_to
  *
  * @access public
@@ -328,7 +317,7 @@ function login_url($return_to = '') {
  *
  * Generate a URL that will navigate users to the logout page, and after
  * successfully logging out will redirect on to another page.
- * 
+ *
  * @param string $return_to
  *
  * @access public
@@ -350,7 +339,7 @@ function logout_url($return_to = '') {
  *
  * Accept an array or any type of object with temporary properties `_parent_id`
  * and `_id` which are used to create a parent/child structure.
- * 
+ *
  * @param mixed  $tree
  * @param int    $parent_id
  * @param mixed  $callback Callback for rendering the contents of a list item
@@ -374,16 +363,16 @@ function build_list($tree, $parent_id = 0, $callback = null, $type = 'ul', $attr
         '</li>
       ';
     }
-  } 
+  }
 
-  return "<{$type}{$attrs}>$html</{$type}>"; 
-} 
+  return "<{$type}{$attrs}>$html</{$type}>";
+}
 
 /**
  * html_attributes
  *
  * Convert a hash to HTML attributes
- * 
+ *
  * @param array $attributes
  *
  * @access public
@@ -407,7 +396,7 @@ function html_attributes($attributes = array()) {
  *   on the value of a specific key.
  * - This is slower (probably) than using SQL, but easier basically & you can
  *   cache the result if you want.
- * 
+ *
  * @param mixed  $array Of hashes
  * @param string $key To inspect
  *
@@ -431,7 +420,7 @@ function rankify($array, $key = 'percentage') {
 
 /**
  * interval_to_str
- * 
+ *
  * @param object \DateInterval Description.
  *
  * @see http://www.php.net/manual/en/class.dateinterval.php

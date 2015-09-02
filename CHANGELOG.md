@@ -1,3 +1,7 @@
+2015-01-09 - version 1.3.3
+
+  * Better default ordering of posts
+
 2015-01-09 - version 1.3.2
 
   * Add shortcodes for resuming Resources and Questions

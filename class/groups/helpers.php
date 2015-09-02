@@ -13,8 +13,8 @@ class Groups {
 
   /**
    * factory
-   * 
-   * @param array|object $group 
+   *
+   * @param array|object $group
    *
    * @access public
    * @static
@@ -27,8 +27,8 @@ class Groups {
 
   /**
    * find_all
-   * 
-   * @param array $args 
+   *
+   * @param array $args
    *
    * @access public
    * @static
@@ -39,10 +39,10 @@ class Groups {
     $args = array_merge(array(
       'numberposts' => -1,
       'post_type'   => 'tu_group',
-      'orderby'     => 'post_title',
+      'orderby'     => 'menu_order post_title',
       'order'       => 'ASC'
     ), $args);
-    
+
     return get_posts_as('Groups', $args);
   }
 
@@ -52,8 +52,8 @@ class Groups {
    * - Fired when Groups are being loaded
    * - If the current user is a Group manager, filter the Groups that are being
    *   loaded to only show those which the Group manage actually manages.
-   * 
-   * @param object $query 
+   *
+   * @param object $query
    *
    * @access public
    * @static
@@ -70,7 +70,7 @@ class Groups {
 
   /**
    * get_trainee_ids
-   * 
+   *
    * @param array $group_ids
    *
    * @access public
@@ -120,7 +120,7 @@ class Groups {
    * - "teacher: 9"
    * This is for letting administrators search for users who have stuff
    * associated with them, for example Groups.
-   * 
+   *
    * @access public
    * @static
    *
@@ -143,7 +143,7 @@ class Groups {
    * - "classes: 12"
    * This is for letting administrators search for users who are in a certain
    * group or groups.
-   * 
+   *
    * @access public
    * @static
    *
@@ -173,7 +173,7 @@ class Groups {
       's'              => $search_str,
       'post_type'      => 'tu_group',
       'posts_per_page' => 5,
-      'orderby'        => 'title',
+      'orderby'        => 'menu_order post_title',
       'order'          => 'ASC'
     ));
 

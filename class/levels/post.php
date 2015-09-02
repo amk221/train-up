@@ -63,7 +63,7 @@ class Level extends Post {
       'post_status' => 'publish',
       'meta_key'    => 'tu_level_id',
       'meta_value'  => $this->ID,
-      'orderby'     => 'menu_order',
+      'orderby'     => 'menu_order post_title',
       'order'       => 'ASC'
     ), $args);
 
@@ -85,8 +85,7 @@ class Level extends Post {
       'post_status' => 'publish',
       'numberposts' => 1,
       'meta_key'    => 'tu_level_id',
-      'meta_value'  => $this->ID,
-      'nesting'     => false
+      'meta_value'  => $this->ID
     ), $args);
 
     $tests = get_posts_as('Tests', $args);

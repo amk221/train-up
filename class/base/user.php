@@ -1254,12 +1254,11 @@ class User {
    */
   public function get_result($test_id) {
     $results = get_posts_as('Results', array(
-      'post_type'    => "tu_result_{$test_id}",
-      'numberposts'  => 1,
-      'meta_key'     => 'tu_user_id',
-      'meta_value'   => $this->ID,
-      'post_status'  => 'publish, draft',
-      'nesting'      => false
+      'post_type'   => "tu_result_{$test_id}",
+      'numberposts' => 1,
+      'meta_key'    => 'tu_user_id',
+      'meta_value'  => $this->ID,
+      'post_status' => 'publish, draft'
     ));
 
     return (count($results) > 0) ? $results[0] : null;

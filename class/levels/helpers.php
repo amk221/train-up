@@ -13,7 +13,7 @@ class Levels {
 
   /**
    * factory
-   * 
+   *
    * @param array|object $level
    *
    * @access public
@@ -39,7 +39,7 @@ class Levels {
     $args = array_merge(array(
       'numberposts' => -1,
       'post_type'   => 'tu_level',
-      'orderby'     => 'menu_order',
+      'orderby'     => 'menu_order post_title',
       'order'       => 'ASC'
     ), $args);
 
@@ -52,7 +52,7 @@ class Levels {
    * - Fired on `pre_get_posts` (for levels in admin), and `tu_pre_get_levels`.
    * - Limit the levels to ones which are assigned to a Group which the current
    *   group manager is also assigned to.
-   * 
+   *
    * @param object $query
    *
    * @access public
@@ -74,11 +74,11 @@ class Levels {
    * - Returns the IDs of Levels that are not assigned to a group.
    * - And therefore, whose Resources and Test are not limited to specific
    *   groups of Trainees.
-   * 
+   *
    * @access public
    * @static
    *
-   * @return array 
+   * @return array
    */
   public static function get_derestricted_ids() {
     global $wpdb;
@@ -111,7 +111,7 @@ class Levels {
 
   /**
    * localised_js
-   * 
+   *
    * @access public
    * @static
    *
@@ -125,7 +125,7 @@ class Levels {
 
   /**
    * confirm_delete_msg
-   * 
+   *
    * @access private
    * @static
    *
@@ -163,19 +163,18 @@ class Levels {
    *
    * @access public
    * @static
-   * 
-   * @return 
+   *
+   * @return
    */
   public static function get_pass_percentage($user, $level = null) {
     if ($level && $level->loaded()) {
       $levels = $level->children;
     } else {
       $levels = Levels::find_all(array(
-        'post_parent' => 0,
-        'nesting' => false
+        'post_parent' => 0
       ));
     }
-    
+
     $total  = count($levels);
     $passed = 0;
 
