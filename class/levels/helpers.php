@@ -39,7 +39,7 @@ class Levels {
     $args = array_merge(array(
       'numberposts' => -1,
       'post_type'   => 'tu_level',
-      'orderby'     => 'menu_order post_title',
+      'orderby'     => 'ID menu_order post_title',
       'order'       => 'ASC'
     ), $args);
 

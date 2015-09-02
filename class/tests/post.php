@@ -119,7 +119,7 @@ class Test extends Post {
       'post_type'   => "tu_question_{$this->ID}",
       'meta_key'    => 'tu_test_id',
       'meta_value'  => $this->ID,
-      'orderby'     => 'menu_order post_title',
+      'orderby'     => 'ID menu_order post_title',
       'order'       => 'ASC'
     ), $args);
 

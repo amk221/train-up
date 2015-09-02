@@ -63,7 +63,7 @@ class Level extends Post {
       'post_status' => 'publish',
       'meta_key'    => 'tu_level_id',
       'meta_value'  => $this->ID,
-      'orderby'     => 'menu_order post_title',
+      'orderby'     => 'ID menu_order post_title',
       'order'       => 'ASC'
     ), $args);
 

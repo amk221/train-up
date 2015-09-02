@@ -9,7 +9,7 @@
 
 namespace TU;
 
-class Resource extends Post {  
+class Resource extends Post {
 
   /**
    * $template_file
@@ -28,7 +28,7 @@ class Resource extends Post {
    * When a Resource is instantiated construct the post as normal, then if it is
    * actually active, check the permissions and save the fact that is has been
    * visited by a Trainee/User.
-   * 
+   *
    * @param mixed $post
    * @param boolean $active
    *
@@ -52,7 +52,7 @@ class Resource extends Post {
 
   /**
    * _add_assets
-   * 
+   *
    * - Fired on `wp_enqueue_scripts` when this Resource is active.
    * - Add the script that allows for navigation via the arrow keys
    * - Fire another action specific to Resources, so that develoeprs can enqueue
@@ -73,7 +73,7 @@ class Resource extends Post {
    *
    * - Fired when this Resource is active
    * - Log the ID of the Resource to the current logged in user's history.
-   * 
+   *
    * @access private
    */
   private function save_visitedness() {
@@ -89,13 +89,13 @@ class Resource extends Post {
    */
   public function get_level_id() {
     return get_post_meta($this->ID, 'tu_level_id', true);
-  }  
+  }
 
   /**
    * set_level_id
    *
    * Set the ID of the Level post that this Resource belongs to.
-   * 
+   *
    * @param integer $level_id
    *
    * @access public
@@ -106,7 +106,7 @@ class Resource extends Post {
 
   /**
    * get_level
-   * 
+   *
    * @access public
    *
    * @return object Level post associated with this resource
@@ -119,7 +119,7 @@ class Resource extends Post {
    * pagination
    *
    * If there is no next resource, just go back to the level
-   * 
+   *
    * @access public
    *
    * @return string prev/next link HTML for navigation through this Question's Test
@@ -141,8 +141,8 @@ class Resource extends Post {
    * - Fired on `the_content` when this Resource is active
    * - Append pagination to allow navigation through associated resources
    * - Apply some filters to allow developers to customise what is rendered
-   * 
-   * @param string $content 
+   *
+   * @param string $content
    *
    * @access private
    *
@@ -160,7 +160,7 @@ class Resource extends Post {
    * get_featured_image
    *
    * A Resources's featured image is taken from the Level it is in.
-   * 
+   *
    * @access public
    *
    * @return string The URL of the image
@@ -174,14 +174,14 @@ class Resource extends Post {
    *
    * Returns the array of breadcrumbs for this Resource. Let them be filtered
    * so that developers can customise them.
-   * 
+   *
    * @access public
    *
    * @return array
    */
   public function get_breadcrumb_trail() {
     $crumbs = parent::get_breadcrumb_trail();
-    
+
     array_shift($crumbs);
 
     $crumbs = array_merge(
@@ -203,7 +203,7 @@ class Resource extends Post {
    * - This is a 'hack' because WordPress' get_adjacent_post is naff
    *
    * @param boolean $return_to_level
-   * 
+   *
    * @access public
    *
    * @return object|null The next resource
@@ -243,9 +243,9 @@ class Resource extends Post {
   /**
    * set_schedules
    *
-   * Accept a hash of Group ID => Date, which specifies when this resource 
+   * Accept a hash of Group ID => Date, which specifies when this resource
    * becomes available and to whom (group).
-   * 
+   *
    * Before saving, convert the schedule datetime from a string into a more
    * useful time representation.
    *
@@ -259,7 +259,7 @@ class Resource extends Post {
 
   /**
    * get_schedules
-   * 
+   *
    * @access public
    *
    * @see set_schedules
@@ -311,7 +311,7 @@ class Resource extends Post {
   /**
    * is_scheduled
    *
-   * Return whether or not this Resource is scheduled. 
+   * Return whether or not this Resource is scheduled.
    * - A resource is considered to be scheduled if it has datetimes associated
    *   with a group ID.
    * - If a resource has no schedules, it is freely available at any time
@@ -326,7 +326,7 @@ class Resource extends Post {
 
   /**
    * is_scheduled_for_all_groups
-   * 
+   *
    * @access public
    *
    * @return boolean Whether or not this resource is scheduled and that
@@ -358,7 +358,7 @@ class Resource extends Post {
     if (!$user->is_administrator()) {
       foreach ($this->schedule_config as $group_id => $schedule) {
        $affects_user = ($group_id === 'all') || $user->has_group($group_id);
-       
+
         if ($affects_user && !$schedule['ok']) {
           $available = false;
           break;
@@ -389,4 +389,4 @@ class Resource extends Post {
 }
 
 
- 
+

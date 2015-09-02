@@ -39,7 +39,7 @@ class Tests {
     return get_posts_as('Tests', array_merge(array(
       'numberposts' => -1,
       'post_type'   => 'tu_test',
-      'orderby'     => 'menu_order post_title',
+      'orderby'     => 'ID menu_order post_title',
       'order'       => 'ASC'
     ), $args));
   }
