@@ -584,7 +584,9 @@ class Plugin {
    * @access private
    */
   public function _send_headers() {
-    header('X-Train-Up-Version: ' . $this->version);
+    if (!headers_sent()) {
+      header('X-Train-Up-Version: ' . $this->version);
+    }
   }
 
   /**

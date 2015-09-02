@@ -1,4 +1,8 @@
-2015-01-09 - version 1.3.3
+2015-02-09 - version 1.3.4
+
+  * Fix error on header image upload
+
+2015-02-09 - version 1.3.3
 
   * Better default ordering of posts
 

@@ -3,7 +3,7 @@
 Plugin Name: Train-Up!
 Plugin URI: github.com/amk221/train-up
 Description: Open Source e-learning plugin for WordPress
-Version: 1.3.3
+Version: 1.3.4
 */
 
 if (version_compare(phpversion(), '5.3', '<' )) {
