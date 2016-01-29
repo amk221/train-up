@@ -1,3 +1,7 @@
+2016-01-29 - version 1.3.5
+
+  * Add missing filter `tu_can_edit_test`
+
 2015-02-09 - version 1.3.4
 
   * Fix error on header image upload

@@ -57,6 +57,10 @@ Actions & Filters
 	  // Fired when a user is removed from a group
 	}, 10, 2);
 
+	add_filter('tu_can_edit_test', function($bool, $test) {
+	  // Fired when an admin tries to edit a test (that may have already been started)
+	}, 10, 2);
+	
 ##### Breadcrumbs
 
 	add_filter('tu_question_crumbs', function($crumbs) {

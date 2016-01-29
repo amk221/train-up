@@ -288,7 +288,7 @@ class Test extends Post {
    * Returns whether or not this test can be edited. It can be edited if no
    * users have started it, otherwise it would be unfair.
    *
-   * As of 1.1.11 this can be overridden by those desperate to manipulate tests
+   * As of 1.3.5 this can be overridden by those desperate to manipulate tests
    * and their questions, even after they have been started. Naughty naughty :/
    *
    * @access public
@@ -296,7 +296,8 @@ class Test extends Post {
    * @return boolean
    */
   public function can_edit() {
-    return !$this->started();
+    $can_edit = !$this->started();
+    return apply_filters('tu_can_edit_test', $can_edit, $this);
   }
 
   /**
