@@ -1,3 +1,7 @@
+### DEPRECATED
+
+Message me if you want to take ownership.
+
 <img src="https://raw.githubusercontent.com/amk221/train-up/master/docs/img/logo.png" width="173" height="35">
 
 Train-Up! was for a short time a premium WordPress plugin. As of Febuary 2015 it is now open source. The reasoning for this move is a combination of difficulties in providing support to customers and recent changes to VAT law that affect micro business.
